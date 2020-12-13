@@ -11,6 +11,8 @@ Chapter 11 "Debugging" in Automate Boring Stuff (249-266)
 
 Chapter 2 "Variables, Expressions and Statements" in Allen Downey Think Python (11-20)
 
+Quinn Dombrowski, Tassie Gniady, and David Kloster, "Introduction to Jupyter Notebooks," The Programming Historian 8 (2019), https://doi.org/10.46430/phen0087
+
 # Table of Contents
 
 # Different types of Python environments
@@ -245,10 +247,154 @@ Once you're done debugging the program, you can add the `logging.disable()` func
 
 # Python in Jupyter notebooks
 
+What is Jupyter?
+- "Project Jupyter is a non-profit, open-source project, born out of the IPython Project in 2014 as it evolved to support interactive data science and scientific computing across all programming languages. Jupyter will always be 100% open-source software, free for all to use and released under the liberal terms of the modified BSD license" (["About Us"](https://jupyter.org/about), *Jupyter.org*)
+
+Project Jupyter receives funding from a range of non-profit foundations and corporate partners that include:
+- Alfred P. Sloan Foundation
+- Gordon and Betty Moore Foundation
+- Google
+- Microsoft
+
+Institutional partners for Project Jupyter include:
+- Apple
+- Bloomberg
+- Netflix
+- Cal Poly
+- Berkeley
+- Amazon Web Services (AWS)
+
+The name Jupyter is a reference to the three core languages supported by the project: **Ju**lia, **Py**thon, and **R**.
+
+And what is a Jupyter notebook?
+
+*"The notebook extends the console-based approach to interactive computing in a qualitatively new direction, providing a web-based application suitable for capturing the whole computation process: developing, documenting, and executing code, as well as communicating the results. The Jupyter notebook combines two components:
+- *A web application: a browser-based tool for interactive authoring of documents which combine explanatory text, mathematics, computations and their rich media output.
+- *Notebook documents: a representation of all content visible in the web application, including inputs and outputs of the computations, explanatory text, mathematics, images, and rich media representations of objects"* ("[The Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html)," Jupyter Notebook Documentation)
+
+A Jupyter notebook is a file (the notebook document) that displays or renders in a web browser.
+
+We'll be launching Jupyter Notebooks through Anaconda. The web application component of the notebook will be hosted on your local computer and the notebook document will save to a file directory on your local computer.
+
+FIGURE ONE
+
+FIGURE FIVE
+
+It may take some time for the notebook to open in a browser window.
+
+FIGURE 6
+
+When in a new notebook document, you have four main components to the user interface:
+- Notebook name
+- Menu bar
+- Toolbar
+- Code cell
+
+The notebook name is what the `.ipynb` file created via the Jupyter notebook will be saved as.
+
+Click on the default notebook name (usually `Untitled`) to rename the notebook.
+
+The menu bar includes drop-down options used to manipulate the notebook functionality.
+
+The toolbar icons give you quick access to the most commonly-used features of the notebook environment.
+
+Code cells are the default type of cell.
+
+But why are there cells?
+
+Jupyter notebooks consist of a sequence of cells.
+
+A cell is a multiline text input field. 
+
+You can execute the contents of a cell by using `Shift-Enter`, clicking the `Play` button in the toolbar, or the `Cell` and `Run` icons in the menu bar.
+
+How a cell executes is determined by its type.
+
+There are three types of Jupyter notebook cells.
+- Code cells: allow you to edit and write code with full syntax highlighting and tab completion
+- Markdown cells: allow you to document the computational process using descriptive text formatted using the markdown language
+- Raw cells: allow you to write output directly. These cells are not evaluated by the notebook and render unmodified.
+
+You can edit or work within a code cell until you get the desired output, then move on to a new cell.
+
+You can use markdown cells along the way to document your process using narrative text (alongside or in addition to code comments used in code cells).
+- To learn more about formatting text in markdown, visit Adam Pritchard's ["Markdown Cheatsheet"](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) resource page.
+
+You can download a Jupyter notebook as a `.ipynb` file (this is the default option).
+
+You can also use the `File` - `Download as` menu options to download the notebook in a number of other formats, including `.py`, `.pdf`, or `.html`.
+
+There's a lot to love about Jupyter notebooks. 
+
+A few challenges or drawbacks:
+- Version control especially in collaborative environments is virtually impossible
+- Jupyter lacks the debugging tools and autocompletion features of an IDE
+- Testing and debugging code is virtually impossible
+- Installing third-party packages or modules can be tricky 
+- Jupyter's non-linear workflow limits transparent reproducible code
+- Jupyter doesn't play well with external big data applications (spark/dask/distributed)
+
+[Citation: Alexander Mueller, ["5 reasons why jupyter notebooks suck"](https://towardsdatascience.com/5-reasons-why-jupyter-notebooks-suck-4dc201e27086), *Towards Data Science* (24 March 2018)]
+
+So when could you use Jupyter notebooks? 
+
+Jupyter notebooks are fantastic tools for exploration. 
+
+They also work well for documenting process, or in situations when you might need to alternate between code and other kinds of text (like say in a lab notebook).
+
 # Project Prompts
 
-Run Python refresh lab in both environments. Include `.py` file and Jupyter notebook `.ipynb` file that documents your experience working through the prompts. 
+Run [Python refresh lab procedure](https://github.com/kwaldenphd/python-refresh/blob/main/lab-procedure.md) in both environments. Include `.py` file and Jupyter notebook `.ipynb` file that document your experience working through the prompts. 
 
 <blockquote>QX: Compare your experience working in both IDEs. What seems appealing about each, what seems challenging about each. Your preference or situations where you'd prefer one over the other</blockquote>
 
-# Lab Notebook Questions
+# Lab Questions
+
+All of the required questions are listed here. Be sure to answer each question completely, including an explanation of how you arrived at your answer.
+
+Q1: In your own words, explain the difference between the `print(hello)` command we just used and `print(“hello”)`.
+
+Q2: Describe the syntax three commands that we just used in your own words. Define the function and method for each example.
+
+Q3: Explain how each of these two programs (above) work in your own words.
+
+Q4: Why does `print(2/3)` return 0? How would you modify your code to return the decimal number?
+
+Q5: Explain `concatenation` in your own words. Why must we convert numbers to strings in the program above? Refer to this example and the previous example.
+
+Q6: Create your own list using the program above as an example. Share your code in your notebook as well as the result. What is the number position for each of the items in your list? How would you return the value of the first item? How would you return the value of the last item?
+
+Q7: What is an alternative way to write the `print` command to return the length of the list. *Hint* you’ll combine the last two lines of the example above.
+
+Q8: How would you modify this code to output the full range 1-10?
+
+Q9: How would you rewrite the code to include only the even numbers from 1 to 10?
+
+Q10: Either include a snippet of your version of this program in your notebook and explain your code, AND/OR explain how the example version of this program works.
+
+Q11: What do you expect this code to output? Explain how this program works in your own words.
+
+Q12: Did the program return the results that you expected? Explain the output in your own words.
+
+Q13: Explain what this program will output and why.
+
+Q14: What did the program output? Explain this program in your own words.
+
+Q15: Modify the code to change the range to have the user guess between 1 and 100. Then, change the conditional statement to return a “really close” message if they are within a 3 digit range of your number. Include the code in your notes and explain how the program works in your own words.
+
+Q16: Create a dictionary for one of the items in your collection using the tags and information from your XML file. Write a `print` command and explain the output of your program in your own words.	
+
+Q17: Try the following two programs. What did the programs output? Explain how each program works in your own words.
+  
+```Python
+for tag in book.keys():
+  print(tag)
+```
+and 
+
+```Python
+for data in book.values(): 
+    print(data)
+```  
+  
+Q19: Explain the `if` functions in your own words. What does this program output? Why?

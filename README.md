@@ -352,7 +352,7 @@ A few challenges or drawbacks:
 - Jupyter's non-linear workflow limits transparent reproducible code
 - Jupyter doesn't play well with external big data applications (spark/dask/distributed)
 
-[Citation: Alexander Mueller, ["5 reasons why jupyter notebooks suck"](https://towardsdatascience.com/5-reasons-why-jupyter-notebooks-suck-4dc201e27086), *Towards Data Science* (24 March 2018)]
+<blockquote>Citation: Alexander Mueller, <a href= "https://towardsdatascience.com/5-reasons-why-jupyter-notebooks-suck-4dc201e27086">"5 reasons why jupyter notebooks suck"</a>, <i>Towards Data Science</i> (24 March 2018)</blockquote>
 
 So when could you use Jupyter notebooks? 
 

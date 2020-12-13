@@ -14,7 +14,7 @@
 - [Task 8: If...Statements](#task-8-ifstatements)
 - [Task 9: Gathering Input](#task-9-gathering-input)
 - [Task 10: Describing Data With Dictionaries](#task-10-describing-data-with-dictionaries)
-- [Lab Notebook Questions](#lab-questions)
+- [Notebook Questions for This Component of the Lab](#notebook-questions-for-this-component-of-the-lab)
 
 # Task 1: Hello World
 
@@ -25,8 +25,6 @@
 print("Hello World!")
 ```
 3. Type the code listed above.
-
-<p align="center"><a href="https://github.com/kwaldenphd/Python/blob/master/images/Image_3.jpg?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/Python/blob/master/images/Image_3.jpg?raw=true" /></a></p>
 
 4. Notice the IDE has highlighted the syntax for us to make debugging easier.
 
@@ -49,7 +47,6 @@ print("Hello World!")
 hello="Hello World"
 print(hello)
 ```
-<p align="center"><a href="https://github.com/kwaldenphd/Python/blob/master/images/Image_3.jpg?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/Python/blob/master/images/Image_3.jpg?raw=true" /></a></p>
 
 12. When working in Spyder, notice the IDE is keeping track of the variable that you created on the right side of the screen.
 
@@ -61,7 +58,7 @@ print(hello)
   *	The names of Python methods and functions are reserved, meaning that they cannot be used as variable names. So, print cannot be used as a variable name.
   * As a rule, variable names should be short and descriptive.
 
-<blockquote>Q1: In your own words, explain the difference between the print(hello) command we just used and print(“hello”).</blockquote>
+<blockquote>QA: In your own words, explain the difference between the print(hello) command we just used and print(“hello”).</blockquote>
 
 # Task 2: Working with Strings and Variables
 
@@ -86,7 +83,7 @@ print(name.title())
 
 19. Try adding two additional print functions calling the name variable with each of these methods.  
 
-<blockquote>Q2: Describe the syntax three commands that we just used in your own words. Define the function and method for each example.</blockquote>
+<blockquote>QB: Describe the syntax three commands that we just used in your own words. Define the function and method for each example.</blockquote>
 
 ```Python
 first_name = "katherine"
@@ -124,7 +121,7 @@ print(sentence)
 ```
 24. We could also assign this whole sentence to a variable and return the same output.
 
-<blockquote>Q3: Explain how each of these two programs (above) work in your own words.</blockquote>
+<blockquote>QC: Explain how each of these two programs (above) work in your own words.</blockquote>
 
 # Task 3: Working With Numbers
 
@@ -137,7 +134,7 @@ print(2-3)
 print(2*3)
 print(2/3)
 ```
-<blockquote>Q4: Why does <code>print(2/3)</code> return 0? How would you modify your code to return the decimal number? Why?</blockquote>
+<blockquote>QD: Why does <code>print(2/3)</code> return 0? How would you modify your code to return the decimal number? Why?</blockquote>
 
 27. Hint: Try `print(2.0/3.0)` using the floating point integers (numbers with decimal points).
 
@@ -240,7 +237,7 @@ print(my_pets)
 
 51. In this block of code, we started with an empty list `[]`. Then the next two lines with `append` added new items to the list.
 
-<blockquote>Q6: Create your own list using the program above as an example. Share your code in your notebook as well as the result. What is the number position for each of the items in your list? How would you return the value of the first item? How would you return the value of the last item?</blockquote>
+<blockquote>QE: Create your own list using the program above as an example. Share your code in your notebook as well as the result. What is the number position for each of the items in your list? How would you return the value of the first item? How would you return the value of the last item?</blockquote>
 
 52. With `append`, items are added to the end of the list. 
 
@@ -301,7 +298,7 @@ length = len(fruit)
 print(length)
 ```
 
-<blockquote>Q7: What is an alternative way to write the print command to return the length of the list. *Hint* you’ll combine the last two lines of the example above.</blockquote>
+<blockquote>QF: What is an alternative way to write the print command to return the length of the list. *Hint* you’ll combine the last two lines of the example above.</blockquote>
 
 # Task 6: Lists of Numbers
 
@@ -322,14 +319,14 @@ print(numbers)
 
 66. Python starts with the first number and quits when it reaches the last number of your range. Because it stops at 10, it doesn’t include the 10.
 
-<blockquote>Q8: How would you modify this code to output the full range 1-10?</blockquote>
+<blockquote>QG: How would you modify this code to output the full range 1-10?</blockquote>
 
 67. What if we just wanted the odd numbers in this range? We could add an additional value to the `range` function to tell the computer to count by two.
 ```Python
 numbers = list(range(1,11,2))
 print(numbers)
 ```
-<blockquote>Q9: How would you rewrite the code to include only the even numbers from 1 to 10?</blockquote>
+<blockquote>QH: How would you rewrite the code to include only the even numbers from 1 to 10?</blockquote>
 
 68. Can you write a program that creates a list that represents all of the different patterns we could represent from 1 bit to 8 bits, like our chart from binary math lab?
 
@@ -355,7 +352,7 @@ for bit in range(1,9):
 print(patterns)
 ```
 
-<blockquote>Q10: Either include a snippet of your version of this program in your notebook and explain your code, AND/OR explain how the example version of this program works.</blockquote>
+<blockquote>QI: Either include a snippet of your version of this program in your notebook and explain your code, AND/OR explain how the example version of this program works.</blockquote>
 
 71. Python also allows us to return the minimum value, maximum value, and sum of the numbers in a list.
 ```Python
@@ -416,7 +413,7 @@ for character in characters:
 print(characters[0].title() + " is my favorite.")
 ```
 
-<blockquote>Q11: What do you expect this code to output? Explain how this program works in your own words.</blockquote>
+<blockquote>QJ: What do you expect this code to output? Explain how this program works in your own words.</blockquote>
 
 78. Comments that walk through each line of this program:
 ```Python
@@ -440,7 +437,7 @@ print(characters[0].title() + " is my favorite.")
 79. If-then statements are another common computer function. If statements are conditional, meaning that there is a test to determine if a statement is true or false and then the computer takes some defined action.
 ```Python
 #here is a list of names
-names=['department of computer science', 'computer science department', 'cs']
+names=['department of computer science', 'computer science department', 'cs', 'cse', 'department of computer science and engineering']
 
 #here is a loop. I am telling Python to look at each of the items in this list
 for name in names:
@@ -448,35 +445,36 @@ for name in names:
   #this indent tells Python that this next action is part of the loop
   #this is my if statement. Note that like a loop it ends in a colon (:)
   #the double == is an equality operator. It's a boolean test (returns TRUE or FALSE)
-  if name == 'cs':
+  if name == 'cse':
 
-    #if the value is equal to cs, then the conditional statement returns TRUE and the value is printed in all upper case letters
+    #if the value is equal to cse, then the conditional statement returns TRUE and the value is printed in all upper case letters
     print(name.upper())
 
   #the else statement gives the set of instructions for a FALSE value. Notice that it is indented same as the if statement.
   else:
 
-    #All other values that are not 'cs' are printed as Titles
+    #All other values that are not 'cse' are printed as Titles
     print(name.title())
 ```
 
 80. This program returns the output
 `Department of Computer Science`
 `Computer Science Department`
-`CS`
+`Cs`
+`CSE`
 
 81. This program without the comments:
 ```Python
-names=['department of computer science', 'computer science department', 'cs']
+names=['department of computer science', 'computer science department', 'cse', 'department of computer science and engineering']
 
 for name in names:
-  if name == 'cs':
+  if name == 'cse':
     print(name.upper())
   else:
     print(name.title())
 ```
 
-<blockquote>Q12: Did the program return the results that you expected? Explain the output in your own words.</blockquote>
+<blockquote>QK: Did the program return the results that you expected? Explain the output in your own words.</blockquote>
 
 82. Python uses a variety of Boolean Operators – these are the conditional tests that return a True or False.
 ```Python
@@ -531,7 +529,7 @@ else:
   print('Would you like a banana?')
 ```
 
-<blockquote>Q13: Explain what this program will output and why.</blockquote>
+<blockquote>QL: Explain what this program will output and why.</blockquote>
 
 # Task 9: Gathering Input
 
@@ -542,7 +540,7 @@ else:
 name = raw_input("Please enter your name: ")
 print("Hello, " + name)
 ```
-<blockquote>Q14: What did the program output? Explain this program in your own words.</blockquote>
+<blockquote>QM: What did the program output? Explain this program in your own words.</blockquote>
 
 86. Here we set the variable name to the input that we receive from the user. 
 
@@ -596,7 +594,7 @@ while number !=secret_number:
 print("You guessed it!")
 ```
 
-<blockquote>Q15: Modify the code to change the range to have the user guess between 1 and 100. Then, change the conditional statement to return a “really close” message if they are within a 3 digit range of your number. Include the code in your notes and explain how the program works in your own words.</blockquote>
+<blockquote>QN: Modify the code to change the range to have the user guess between 1 and 100. Then, change the conditional statement to return a “really close” message if they are within a 3 digit range of your number. Include the code in your notes and explain how the program works in your own words.</blockquote>
 
 # Task 10: Describing Data With Dictionaries
 
@@ -648,7 +646,7 @@ book={'title': 'CSS: The Definitive Guide', 'author': 'Eric Meyer', 'date': '200
 
 99. The information is added in a series of pairs called key-value pairs. Each key is the equivalent of the XML tag and each value equal to the value we associated with the tag.
 
-<blockquote>Q16: Create a dictionary for one of the items in your collection using the template outlined in this tutorial. Write a print command and explain the output of your program in your own words.</blockquote>
+<blockquote>QO: Create a dictionary for one of the items in your collection using the template outlined in this tutorial. Write a print command and explain the output of your program in your own words.</blockquote>
 
 100. Just like with the list, we can also create a loop to return each of the values in my new dictionary.
 ```Python
@@ -677,7 +675,7 @@ for tag, data in book.items():
   print("value: " + data)
 ```
 
-<blockquote>Q17: Try the following two programs. What did the programs output? Explain how each program works in your own words.</blockquote>
+<blockquote>QP: Try the following two programs. What did the programs output? Explain how each program works in your own words.</blockquote>
 ```Python
 for tag in book.keys():
   print(tag)
@@ -711,7 +709,7 @@ book['date'] = 2002
 print(book)
 ```
   
-<blockquote>Q18: What do you expect this program to output? Why?</blockquote>
+<blockquote>QQ: What do you expect this program to output? Why?</blockquote>
   
 107. We can also delete key-value pairs using the `del` function.
 ```Python
@@ -735,45 +733,45 @@ if 'HTML' not in book.values():
   print("The title is " + work['title'])
 ```
 
-<blockquote>Q19: Explain the if functions in your own words. What does this program output? Why?</blockquote>
+<blockquote>QR: Explain the if functions in your own words. What does this program output? Why?</blockquote>
 
-# Lab Questions
+# Notebook questions for this component of the lab
 
 All of the required questions are listed here. Be sure to answer each question completely, including an explanation of how you arrived at your answer.
 
-Q1: In your own words, explain the difference between the `print(hello)` command we just used and `print(“hello”)`.
+QA: In your own words, explain the difference between the `print(hello)` command we just used and `print(“hello”)`.
 
-Q2: Describe the syntax three commands that we just used in your own words. Define the function and method for each example.
+QB: Describe the syntax three commands that we just used in your own words. Define the function and method for each example.
 
-Q3: Explain how each of these two programs (above) work in your own words.
+QC: Explain how each of these two programs (above) work in your own words.
 
-Q4: Why does `print(2/3)` return 0? How would you modify your code to return the decimal number?
+QD: Why does `print(2/3)` return 0? How would you modify your code to return the decimal number?
 
-Q5: Explain `concatenation` in your own words. Why must we convert numbers to strings in the program above? Refer to this example and the previous example.
+QE: Explain `concatenation` in your own words. Why must we convert numbers to strings in the program above? Refer to this example and the previous example.
 
-Q6: Create your own list using the program above as an example. Share your code in your notebook as well as the result. What is the number position for each of the items in your list? How would you return the value of the first item? How would you return the value of the last item?
+QF: Create your own list using the program above as an example. Share your code in your notebook as well as the result. What is the number position for each of the items in your list? How would you return the value of the first item? How would you return the value of the last item?
 
-Q7: What is an alternative way to write the `print` command to return the length of the list. *Hint* you’ll combine the last two lines of the example above.
+QG: What is an alternative way to write the `print` command to return the length of the list. *Hint* you’ll combine the last two lines of the example above.
 
-Q8: How would you modify this code to output the full range 1-10?
+QH: How would you modify this code to output the full range 1-10?
 
-Q9: How would you rewrite the code to include only the even numbers from 1 to 10?
+QI: How would you rewrite the code to include only the even numbers from 1 to 10?
 
-Q10: Either include a snippet of your version of this program in your notebook and explain your code, AND/OR explain how the example version of this program works.
+QJ: Either include a snippet of your version of this program in your notebook and explain your code, AND/OR explain how the example version of this program works.
 
-Q11: What do you expect this code to output? Explain how this program works in your own words.
+QK: What do you expect this code to output? Explain how this program works in your own words.
 
-Q12: Did the program return the results that you expected? Explain the output in your own words.
+QL: Did the program return the results that you expected? Explain the output in your own words.
 
-Q13: Explain what this program will output and why.
+QM: Explain what this program will output and why.
 
-Q14: What did the program output? Explain this program in your own words.
+QN: What did the program output? Explain this program in your own words.
 
-Q15: Modify the code to change the range to have the user guess between 1 and 100. Then, change the conditional statement to return a “really close” message if they are within a 3 digit range of your number. Include the code in your notes and explain how the program works in your own words.
+QO: Modify the code to change the range to have the user guess between 1 and 100. Then, change the conditional statement to return a “really close” message if they are within a 3 digit range of your number. Include the code in your notes and explain how the program works in your own words.
 
-Q16: Create a dictionary for one of the items in your collection using the tags and information from your XML file. Write a `print` command and explain the output of your program in your own words.	
+QP: Create a dictionary for one of the items in your collection using the tags and information from your XML file. Write a `print` command and explain the output of your program in your own words.	
 
-Q17: Try the following two programs. What did the programs output? Explain how each program works in your own words.
+QQ: Try the following two programs. What did the programs output? Explain how each program works in your own words.
   
 ```Python
 for tag in book.keys():
@@ -786,4 +784,4 @@ for data in book.values():
     print(data)
 ```  
   
-Q19: Explain the `if` functions in your own words. What does this program output? Why?
+QR: Explain the `if` functions in your own words. What does this program output? Why?

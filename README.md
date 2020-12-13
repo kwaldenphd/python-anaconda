@@ -15,6 +15,19 @@ Quinn Dombrowski, Tassie Gniady, and David Kloster, "Introduction to Jupyter Not
 
 # Table of Contents
 
+- [Different types of Python environments](#different-types-of-python-environments)
+- [Installing Anaconda](#installing-anaconda)
+- [Python in Spyder](#python-in-spyder)
+- [Debugging](#debugging)
+  * [Stepwise debugging in Spyder](#stepwise-debugging-in-spyder)
+  * [Other approaches to debugging](#other-approaches-to-debugging)
+  * [But why can't I debug using `print()`](#but-why-cant-i-debug-using-print)
+- [Python in Jupyter notebooks](#python-in-jupyter-notebooks)
+- [Project prompts](#project-prompts)
+- [Lab notebook questions](#lab-notebook-questions)
+  * [Notebook questions from this section of the lab](#notebook-questions-from-this-section-of-the-lab)
+  * [Notebook questions from the Python Refresh Lab Procedure](#notebook-questions-from-the-python-refresh-lab-procedure)
+
 # Different types of Python environments
 
 In the Fall 2020 iteration of Elements I, we used the browser-based IDE [Replit](https://repl.it/).
@@ -141,7 +154,7 @@ Python errors will usually fall into three types:
 
 The debugging strategies discussed here will focus on semantic errors but are useful for all types of errors.
 
-# Step-wise debugging in Spyder
+## Stepwise debugging in Spyder
 
 Spyder will catch many syntax and runtime errors. 
 
@@ -183,7 +196,7 @@ Debug the file going line-by-line. Remember to use `Step Over` to execute functi
 
 <blockquote>QX: What type of error does this program return (syntax, runtime, semantic) and why? How would we go about modifying the program to address this error?</blockquote>
 
-# Other approaches to debugging
+## Other approaches to debugging
 
 If you've enver put a `print()` statement in your code to output a variable's value while the program is running, you have used a form of `logging` to debug your code.
 
@@ -348,43 +361,45 @@ Run [Python refresh lab procedure](https://github.com/kwaldenphd/python-refresh/
 
 <blockquote>QX: Compare your experience working in both IDEs. What seems appealing about each, what seems challenging about each. Your preference or situations where you'd prefer one over the other</blockquote>
 
-# Lab Questions
+# Lab notebook questions
 
-All of the required questions are listed here. Be sure to answer each question completely, including an explanation of how you arrived at your answer.
+## Notebook questions from this section of the lab
 
-Q1: In your own words, explain the difference between the `print(hello)` command we just used and `print(“hello”)`.
+## Notebook questions from the Python Refresh Lab Procedure
 
-Q2: Describe the syntax three commands that we just used in your own words. Define the function and method for each example.
+QA: In your own words, explain the difference between the `print(hello)` command we just used and `print(“hello”)`.
 
-Q3: Explain how each of these two programs (above) work in your own words.
+QB: Describe the syntax three commands that we just used in your own words. Define the function and method for each example.
 
-Q4: Why does `print(2/3)` return 0? How would you modify your code to return the decimal number?
+QC: Explain how each of these two programs (above) work in your own words.
 
-Q5: Explain `concatenation` in your own words. Why must we convert numbers to strings in the program above? Refer to this example and the previous example.
+QD: Why does `print(2/3)` return 0? How would you modify your code to return the decimal number?
 
-Q6: Create your own list using the program above as an example. Share your code in your notebook as well as the result. What is the number position for each of the items in your list? How would you return the value of the first item? How would you return the value of the last item?
+QE: Explain `concatenation` in your own words. Why must we convert numbers to strings in the program above? Refer to this example and the previous example.
 
-Q7: What is an alternative way to write the `print` command to return the length of the list. *Hint* you’ll combine the last two lines of the example above.
+QF: Create your own list using the program above as an example. Share your code in your notebook as well as the result. What is the number position for each of the items in your list? How would you return the value of the first item? How would you return the value of the last item?
 
-Q8: How would you modify this code to output the full range 1-10?
+QG: What is an alternative way to write the `print` command to return the length of the list. *Hint* you’ll combine the last two lines of the example above.
 
-Q9: How would you rewrite the code to include only the even numbers from 1 to 10?
+QH: How would you modify this code to output the full range 1-10?
 
-Q10: Either include a snippet of your version of this program in your notebook and explain your code, AND/OR explain how the example version of this program works.
+QI: How would you rewrite the code to include only the even numbers from 1 to 10?
 
-Q11: What do you expect this code to output? Explain how this program works in your own words.
+QJ: Either include a snippet of your version of this program in your notebook and explain your code, AND/OR explain how the example version of this program works.
 
-Q12: Did the program return the results that you expected? Explain the output in your own words.
+QK: What do you expect this code to output? Explain how this program works in your own words.
 
-Q13: Explain what this program will output and why.
+QL: Did the program return the results that you expected? Explain the output in your own words.
 
-Q14: What did the program output? Explain this program in your own words.
+QM: Explain what this program will output and why.
 
-Q15: Modify the code to change the range to have the user guess between 1 and 100. Then, change the conditional statement to return a “really close” message if they are within a 3 digit range of your number. Include the code in your notes and explain how the program works in your own words.
+QN: What did the program output? Explain this program in your own words.
 
-Q16: Create a dictionary for one of the items in your collection using the tags and information from your XML file. Write a `print` command and explain the output of your program in your own words.	
+QO: Modify the code to change the range to have the user guess between 1 and 100. Then, change the conditional statement to return a “really close” message if they are within a 3 digit range of your number. Include the code in your notes and explain how the program works in your own words.
 
-Q17: Try the following two programs. What did the programs output? Explain how each program works in your own words.
+QP: Create a dictionary for one of the items in your collection using the tags and information from your XML file. Write a `print` command and explain the output of your program in your own words.	
+
+QQ: Try the following two programs. What did the programs output? Explain how each program works in your own words.
   
 ```Python
 for tag in book.keys():
@@ -397,4 +412,5 @@ for data in book.values():
     print(data)
 ```  
   
-Q19: Explain the `if` functions in your own words. What does this program output? Why?
+QR: Explain the `if` functions in your own words. What does this program output? Why?
+

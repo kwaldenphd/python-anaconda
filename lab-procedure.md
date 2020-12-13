@@ -18,9 +18,9 @@
 
 # Task 1: Hello World
 
-1. Your Pi comes installed with a Python programming environment, but we’ll stick with Geany for this lab. We'll write our first Python program using a variation on the now familiar “Hello World!”
+1. We'll write our first Python program using a variation on the now familiar “Hello World!”
 
-2. Open a new file in Geany and save it as Hello_World.py. The .py extension on the file name tells Geany that we are writing Python (rather than .html or .xml).
+2. Open a new Hello_World file. 
 ```Python
 print("Hello World!")
 ```
@@ -28,13 +28,13 @@ print("Hello World!")
 
 <p align="center"><a href="https://github.com/kwaldenphd/Python/blob/master/images/Image_3.jpg?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/Python/blob/master/images/Image_3.jpg?raw=true" /></a></p>
 
-4. Notice that as with our other HTML project, Geany has highlighted the syntax for us to make debugging easier.
+4. Notice the IDE has highlighted the syntax for us to make debugging easier.
 
-5. Now we need to run the file – either press F5 or select Build > Execute from the menu. A terminal window should open with the phrase “Hello World!”
+5. Now we need to run the program.
 
 6. You have just successfully written your first Python program. What just happened? 
 
-7. When you select Execute from the menu, Geany runs the file through the Python interpreter, this is another program that reads though the Python code that you just wrote and determines what each piece of code means and then executes the code (or runs it). 
+7. When you execute the program, the IDE runs the command through the Python interpreter, this is another program that reads though the Python code that you just wrote and determines what each piece of code means and then executes the code (or runs it). 
 
 8. In this example, the Python interpreter recognizes the word print as a Python function. This function allows you to “print” to the screen or send output to the computer screen. 
 
@@ -51,7 +51,7 @@ print(hello)
 ```
 <p align="center"><a href="https://github.com/kwaldenphd/Python/blob/master/images/Image_3.jpg?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/Python/blob/master/images/Image_3.jpg?raw=true" /></a></p>
 
-12. Notice that Geany is keeping track of the variable that you created on the left side of the screen.
+12. When working in Spyder, notice the IDE is keeping track of the variable that you created on the right side of the screen.
 
 13. When you execute the command you will see the same results as the first iteration. Variables are helpful when you need to use the same information multiple times in the same program. 
 
@@ -65,7 +65,7 @@ print(hello)
 
 # Task 2: Working with Strings and Variables
 
-15. Python has a few built-in functions for working with strings. Create a new file called name.py in Geany. Assign your first and last name to the variable name in all lower-case letters.
+15. Python has a few built-in functions for working with strings. Create a new file called `name.py`. Assign your first and last name to the variable name in all lower-case letters.
 ```Python
 name = "katherine walden"
 ```

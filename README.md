@@ -18,11 +18,13 @@ Quinn Dombrowski, Tassie Gniady, and David Kloster, "Introduction to Jupyter Not
 - [Different types of Python environments](#different-types-of-python-environments)
 - [Installing Anaconda](#installing-anaconda)
 - [Python in Spyder](#python-in-spyder)
+  * [Installing packages in Spyder] ADD THIS SECTION
 - [Debugging](#debugging)
   * [Stepwise debugging in Spyder](#stepwise-debugging-in-spyder)
   * [Other approaches to debugging](#other-approaches-to-debugging)
   * [But why can't I debug using `print()`](#but-why-cant-i-debug-using-print)
 - [Python in Jupyter notebooks](#python-in-jupyter-notebooks)
+  * [Installing packages in Jupyter notebooks] ADD THIS SECTION
 - [Project prompts](#project-prompts)
 - [Lab notebook questions](#lab-notebook-questions)
   * [Notebook questions from this section of the lab](#notebook-questions-from-this-section-of-the-lab)

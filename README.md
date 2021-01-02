@@ -5,6 +5,17 @@ This tutorial is licensed under a <a href="http://creativecommons.org/licenses/b
 
 ## Lab Goals
 
+This lab covers installing Anaconda and getting started in two different Python environments: the Spyder IDE and Jupyter Notebooks. The lab also covers stepwise debugging and the `log()` function.
+
+By the end of this lab, students will be able to:
+- Install Anaconda in their local environment
+- Understand the core components of the Spyder IDE
+- Understand the conceptual elements of step-wise debugging
+- Understand how to use step-wise debugging in the Spyder IDE
+- Understand the core components of the Jupyter Notebooks environment
+- Compare and contrast the Spyder and Jupyter environments
+- Refresh their knowledge of core Python syntax
+
 ## Acknowledgements
 
 Information and exercises in this lab are adapted from the following text:

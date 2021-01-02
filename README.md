@@ -22,7 +22,7 @@ The author consulted the following texts when writing this tutorial:
 - [Different types of Python environments](#different-types-of-python-environments)
 - [Installing Anaconda](#installing-anaconda)
 - [Python in Spyder](#python-in-spyder)
-  * [Installing packages in Spyder] ADD THIS SECTION
+  * [Installing packages in Spyder](#installing-packages-in-spyder)
 - [Debugging](#debugging)
   * [Stepwise debugging in Spyder](#stepwise-debugging-in-spyder)
   * [Other approaches to debugging](#other-approaches-to-debugging)
@@ -141,47 +141,65 @@ IMAGE
 
 <blockquote>OPTIONAL: Take one of your Python files or programs from Elements I and load it into Spyder. Explore how the program runs in a different IDE. In particular, explore Spyder's options to run portions or a selection of the larger program. How does this change the way you interact with the program?</blockquote>
 
+## Installing packages in Spyder
+
+35. From the Anaconda navigator, you can select the option to launch a terminal.
+
+36. In that terminal, you can use `pip install package-name` to install any needed packages.
+
+37. You can check what packages are installed using the terminal or the GUI "Environments" option.
+
+38. You can also let Anaconda manage your packages with the conda package manager.
+
+39. Most packages will have an alternate install syntax for conda that starts with `conda install package-name`.
+
+40. NOTE: Installing packages using `conda` only installs the package in the Anaconda environment. `pip` installs the package in any environment.
+
+41. For more on the conda package manager: 
+- [Anaconda Documentation, Installing conda packages](https://docs.anaconda.com/anaconda/user-guide/tasks/install-packages/)
+- Jake VanderPlas, ["Conda: Myths and Misconceptions"](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/) *Pythonic Perambulations personal blog* (25 August 2016)
+
 # Debugging
 
-35. To paraphrase an old programming joke, writing code is 90% of the work of programming. Debugging is the other 90%.
+42. To paraphrase an old programming joke, writing code is 90% of the work of programming. Debugging is the other 90%.
 
-36. You've been working on a program for hours, your head hurts, and something still isn't working. We all know a version of that feeling.
+43. You've been working on a program for hours, your head hurts, and something still isn't working. We all know a version of that feeling.
 
-37. There's no easy solution that will prevent all problems (or "bugs") in your code. But having strategies for testing your code, recognizing and making sense of error messages, and methodically debugging your code can help immensely.
+44. There's no easy solution that will prevent all problems (or "bugs") in your code. But having strategies for testing your code, recognizing and making sense of error messages, and methodically debugging your code can help immensely.
 
-38. Python errors will usually fall into three types: syntax, runtime, and semantic.
+45. Python errors will usually fall into three types: syntax, runtime, and semantic.
 
-39. Syntax refers to the structure of a program and rules about that structure. 
+46. Syntax refers to the structure of a program and rules about that structure. 
 
-40. ***Syntax errors*** involve things like indentation, parenthesis, etc. The Python interpreter expects the language to be structured a specific way, and throws a syntax error when it's not.
+47. ***Syntax errors*** involve things like indentation, parenthesis, etc. The Python interpreter expects the language to be structured a specific way, and throws a syntax error when it's not.
 
-41. ***Runtime errors***, or ***exceptions***: appears after a program has started running. These errors indicate something unexpected has happened that interrupts or stops the program execution. 
+48. ***Runtime errors***, or ***exceptions***: appears after a program has started running. These errors indicate something unexpected has happened that interrupts or stops the program execution. 
 
-42. Things that can cause a runtime error include:
+49. Things that can cause a runtime error include:
 - Misspelled or incorrectly capitalized variables or function names
 - Dividing by zero
 - Mismatched data types (i.e. attempting to perform operations on data of the wrong type)
 - Attempting to use a type conversion function on a value that can't be converted
 
-43. Semantic: relates to meaning. 
+50. Semantic: relates to meaning. 
 
-44. ***Semantic errors*** have to do with the meaning (or purpose/intent) of your code. Semantic errors don't show up as error messages-but the program will not do what you expect it to do. 
+51. ***Semantic errors*** have to do with the meaning (or purpose/intent) of your code. Semantic errors don't show up as error messages-but the program will not do what you expect it to do. 
 
-45. The debugging strategies discussed here will focus on semantic errors but are useful for all types of errors.
+52. The debugging strategies discussed here will focus on semantic errors but are useful for all types of errors.
 
 ## Stepwise debugging in Spyder
 
-46. Spyder will catch many syntax and runtime errors. 
+53. Spyder will catch many syntax and runtime errors. 
 
-47. Hover over a red `X` by any of your lines of code to see more information about a possible error.
+54. Hover over a red `X` by any of your lines of code to see more information about a possible error.
 
-48. Spyder integrates the enhanced `ipdb` debugger, which gives you robust options for troubleshooting or debugging your code.
+55. Spyder integrates the enhanced `ipdb` debugger, which gives you robust options for troubleshooting or debugging your code.
 
-49. Specifically, the debugger will let you run a program line by line, running a single line of code and waiting for you to tell it to continue.
+56. Specifically, the debugger will let you run a program line by line, running a single line of code and waiting for you to tell it to continue.
 
-50. Running your program through this kind of debugging is immensely valuable for tracking down bugs or catching complex issues in a program.
+57. Running your program through this kind of debugging is immensely valuable for tracking down bugs or catching complex issues in a program.
 
-51. This mode of debugging includes the following possible steps or "moves":
+58. This mode of debugging includes the following possible steps or "moves":
 - Continue (run the program until the next breakpoint)
 - Step in (executes the next line of code; if the next line of code is a function, the debugger will 'step into' the first line of that function)
 - Step over (executes the next line of code, but will not go line-by-line through the function; the debugger 'steps over' the function code and waits for the function call to return)
@@ -192,7 +210,7 @@ FIGURE 3
 
 FIGURE 4
 
-52. Let's use this approach and Spyder functionality to debug a number adding program..
+59. Let's use this approach and Spyder functionality to debug a number adding program..
 
 ```Python
 print('Enter the first number to add: ')
@@ -204,9 +222,9 @@ third = input()
 print('The sum is ' + first + second + third)
 ```
 
-53. First run the program without the debugger enabled. What happens?
+60. First run the program without the debugger enabled. What happens?
 
-54. Debug the file going line-by-line. Remember to use `Step Over` to execute functions without going into each line of the function code.
+61. Debug the file going line-by-line. Remember to use `Step Over` to execute functions without going into each line of the function code.
 - Functions in this sample program include `print()` and `input()`
 - You can always `Step Out` if you accidently step into a function
 
@@ -214,23 +232,23 @@ print('The sum is ' + first + second + third)
 
 ## Other approaches to debugging
 
-55. If you've enver put a `print()` statement in your code to output a variable's value while the program is running, you have used a form of `logging` to debug your code.
+62. If you've enver put a `print()` statement in your code to output a variable's value while the program is running, you have used a form of `logging` to debug your code.
 
-56. Python's `logging` module lets you record custom messages that output as part of your program. 
+63. Python's `logging` module lets you record custom messages that output as part of your program. 
 
-57. These `log` messages describe when the program reaches a point where a logging function is called and what variables have been specified at that point.
+64. These `log` messages describe when the program reaches a point where a logging function is called and what variables have been specified at that point.
 
-58. Step one is to import the `logging` module and set up basic configuration for the module at the top of your `.py` file.
+65. Step one is to import the `logging` module and set up basic configuration for the module at the top of your `.py` file.
 ```Python
 import logging
 logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
 ```
 
-59. This configuration information instructs Python to create a `LogRecord` object when a logging function is called, and to include specific information about that event in the `LogRecord` object.
+66. This configuration information instructs Python to create a `LogRecord` object when a logging function is called, and to include specific information about that event in the `LogRecord` object.
 
-60. So how would we use the `logging` module when writing a program?
+67. So how would we use the `logging` module when writing a program?
 
-61. Say we were creating a function that calcualted the factorial of a given number.
+68. Say we were creating a function that calcualted the factorial of a given number.
 - Factorial 4 is 1 x 2 x 3 x 4 = 24
 - Factorial 7 is 1 x 2 x 3 x 4 x 5 x 6 x 7 = 5040
 
@@ -252,7 +270,7 @@ print(factorial(5))
 logging.debug('End of program')
 ```
 
-62. Anytime we call the `logging.debug()` function, the configuration information from the start of the file governs the log formatting and messages.
+69. Anytime we call the `logging.debug()` function, the configuration information from the start of the file governs the log formatting and messages.
 
 <blockquote>QX: What happens when we run this program? What kinds of log messages do we get, and what information do they give us?</blockquote>
 
@@ -260,15 +278,15 @@ logging.debug('End of program')
 
 ## But why can't I debug using `print()`
 
-63. It can seem unwieldy to configure the `logging` module and write lines of code dedicated just to logging what's happening in your program.
+70. It can seem unwieldy to configure the `logging` module and write lines of code dedicated just to logging what's happening in your program.
 
-64. But think about the factorial example. Log messages led us right to the program's issue. 
+71. But think about the factorial example. Log messages led us right to the program's issue. 
 
-65. Trying to debug using `print()` calls means you'll have to go back through each line of your program to remove `print()` statements used for debugging (while also making sure you aren't removing `print()` statements that are a component of the actual program).
+72. Trying to debug using `print()` calls means you'll have to go back through each line of your program to remove `print()` statements used for debugging (while also making sure you aren't removing `print()` statements that are a component of the actual program).
 
-66. Think of the `logging` module as a report that generates alongside your program output as it executes. The program executes and you also have useful log information about what happened along the way.
+73. Think of the `logging` module as a report that generates alongside your program output as it executes. The program executes and you also have useful log information about what happened along the way.
 
-67. Once you're done debugging the program, you can add the `logging.disable()` function to the start of your program to supress the log messages without actually having to modify your program.
+74. Once you're done debugging the program, you can add the `logging.disable()` function to the start of your program to supress the log messages without actually having to modify your program.
 
 <blockquote>Visit Python's <a href="https://docs.python.org/3/howto/logging.html">Logging HOWTO</a> documentation to learn more about the logging module.</blockquote>
 
@@ -276,17 +294,17 @@ logging.debug('End of program')
 
 # Python in Jupyter notebooks
 
-68. What is Jupyter?
+75. What is Jupyter?
 
-69. "Project Jupyter is a non-profit, open-source project, born out of the IPython Project in 2014 as it evolved to support interactive data science and scientific computing across all programming languages. Jupyter will always be 100% open-source software, free for all to use and released under the liberal terms of the modified BSD license" (["About Us"](https://jupyter.org/about), *Jupyter.org*)
+76. "Project Jupyter is a non-profit, open-source project, born out of the IPython Project in 2014 as it evolved to support interactive data science and scientific computing across all programming languages. Jupyter will always be 100% open-source software, free for all to use and released under the liberal terms of the modified BSD license" (["About Us"](https://jupyter.org/about), *Jupyter.org*)
 
-70. Project Jupyter receives funding from a range of non-profit foundations and corporate partners that include:
+77. Project Jupyter receives funding from a range of non-profit foundations and corporate partners that include:
 - Alfred P. Sloan Foundation
 - Gordon and Betty Moore Foundation
 - Google
 - Microsoft
 
-71. Institutional partners for Project Jupyter include:
+78. Institutional partners for Project Jupyter include:
 - Apple
 - Bloomberg
 - Netflix
@@ -294,11 +312,11 @@ logging.debug('End of program')
 - Berkeley
 - Amazon Web Services (AWS)
 
-72. The name Jupyter is a reference to the three core languages supported by the project: **Ju**lia, **Py**thon, and **R**.
+79. The name Jupyter is a reference to the three core languages supported by the project: **Ju**lia, **Py**thon, and **R**.
 
-73. And what is a Jupyter notebook?
+80. And what is a Jupyter notebook?
 
-74. According to "[The Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html)" documentation:
+81. According to "[The Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html)" documentation:
 
 <blockquote>The notebook extends the console-based approach to interactive computing in a qualitatively new direction, providing a web-based application suitable for capturing the whole computation process: developing, documenting, and executing code, as well as communicating the results. The Jupyter notebook combines two components:
  <ul>
@@ -307,67 +325,67 @@ logging.debug('End of program')
  </ul>
  </blockquote>
 
-75. A Jupyter notebook is a file (the notebook document) that displays or renders in a web browser.
+82. A Jupyter notebook is a file (the notebook document) that displays or renders in a web browser.
 
-76. We'll be launching Jupyter Notebooks through Anaconda. 
+83. We'll be launching Jupyter Notebooks through Anaconda. 
 
-77. The web application component of the notebook will be hosted on your local computer and the notebook document will save to a file directory on your local computer.
+84. The web application component of the notebook will be hosted on your local computer and the notebook document will save to a file directory on your local computer.
 
 FIGURE ONE
 
 FIGURE FIVE
 
-78. It may take some time for the notebook to open in a browser window.
+85. It may take some time for the notebook to open in a browser window.
 
 FIGURE 6
 
-79. When in a new notebook document, you have four main components to the user interface:
+86. When in a new notebook document, you have four main components to the user interface:
 - Notebook name
 - Menu bar
 - Toolbar
 - Code cell
 
-80. The notebook name is what the `.ipynb` file created via the Jupyter notebook will be saved as.
+87. The notebook name is what the `.ipynb` file created via the Jupyter notebook will be saved as.
 
-81. Click on the default notebook name (usually `Untitled`) to rename the notebook.
+88. Click on the default notebook name (usually `Untitled`) to rename the notebook.
 
-82. The menu bar includes drop-down options used to manipulate the notebook functionality.
+89. The menu bar includes drop-down options used to manipulate the notebook functionality.
 
-83. The toolbar icons give you quick access to the most commonly-used features of the notebook environment.
+90. The toolbar icons give you quick access to the most commonly-used features of the notebook environment.
 
-84. Code cells are the default type of cell.
+91. Code cells are the default type of cell.
 
-85. But why are there cells?
+92. But why are there cells?
 
-86. Jupyter notebooks consist of a sequence of cells.
+93. Jupyter notebooks consist of a sequence of cells.
 
-87. A cell is a multiline text input field. 
+94. A cell is a multiline text input field. 
 
-88. You can execute the contents of a cell by using `Shift-Enter`, clicking the `Play` button in the toolbar, or the `Cell` and `Run` icons in the menu bar.
+95. You can execute the contents of a cell by using `Shift-Enter`, clicking the `Play` button in the toolbar, or the `Cell` and `Run` icons in the menu bar.
 
-89. How a cell executes is determined by its type.
+96. How a cell executes is determined by its type.
 
-90. There are three types of Jupyter notebook cells.
+97. There are three types of Jupyter notebook cells.
 
-91. ***Code cells*** allow you to edit and write code with full syntax highlighting and tab completion.
+98. ***Code cells*** allow you to edit and write code with full syntax highlighting and tab completion.
 
-91. ***Markdown cells*** allow you to document the computational process using descriptive text formatted using the markdown language.
+99. ***Markdown cells*** allow you to document the computational process using descriptive text formatted using the markdown language.
 
-92. ***Raw cells*** allow you to write output directly. These cells are not evaluated by the notebook and render unmodified.
+100. ***Raw cells*** allow you to write output directly. These cells are not evaluated by the notebook and render unmodified.
 
-93. You can edit or work within a code cell until you get the desired output, then move on to a new cell.
+101. You can edit or work within a code cell until you get the desired output, then move on to a new cell.
 
-94. You can use markdown cells along the way to document your process using narrative text (alongside or in addition to code comments used in code cells).
+102. You can use markdown cells along the way to document your process using narrative text (alongside or in addition to code comments used in code cells).
 
-95. To learn more about formatting text in markdown, visit Adam Pritchard's ["Markdown Cheatsheet"](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) resource page.
+103. To learn more about formatting text in markdown, visit Adam Pritchard's ["Markdown Cheatsheet"](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) resource page.
 
-96. You can download a Jupyter notebook as a `.ipynb` file (this is the default option).
+104. You can download a Jupyter notebook as a `.ipynb` file (this is the default option).
 
-97. You can also use the `File` - `Download as` menu options to download the notebook in a number of other formats, including `.py`, `.pdf`, or `.html`.
+105. You can also use the `File` - `Download as` menu options to download the notebook in a number of other formats, including `.py`, `.pdf`, or `.html`.
 
-98. There's a lot to love about Jupyter notebooks. 
+106. There's a lot to love about Jupyter notebooks. 
 
-99. A few challenges or drawbacks:
+107. A few challenges or drawbacks:
 - Version control especially in collaborative environments is virtually impossible
 - Jupyter lacks the debugging tools and autocompletion features of an IDE
 - Testing and debugging code is virtually impossible
@@ -377,11 +395,51 @@ FIGURE 6
 
 <blockquote>Citation: Alexander Mueller, <a href= "https://towardsdatascience.com/5-reasons-why-jupyter-notebooks-suck-4dc201e27086">"5 reasons why jupyter notebooks suck"</a>, <i>Towards Data Science</i> (24 March 2018)</blockquote>
 
-100. So when could you use Jupyter notebooks? 
+108. So when could you use Jupyter notebooks? 
 
-101. Jupyter notebooks are fantastic tools for exploration. 
+109. Jupyter notebooks are fantastic tools for exploration. 
 
-102. They also work well for documenting process, or in situations when you might need to alternate between code and other kinds of text (like say in a lab notebook).
+110. They also work well for documenting process, or in situations when you might need to alternate between code and other kinds of text (like say in a lab notebook).
+
+### Installing packages in Jupyter notebooks
+
+111. You might see internet documentation that suggests you apply the install terminal syntax directly in a code cell.
+```Python
+!conda install --yes numpy
+
+!pip install numpy
+```
+
+112. Resist this temptation!
+
+113. When installing a package in a notebook environment, you want to make sure the package is installed in the currently-running Jupyter kernel.
+
+114. We can do this by loading the package and the adding a line of code to install the package in the current Jupyter kernel if needed.
+
+```Python
+# sample code for installing numpy using conda
+
+# import sys module
+import sys
+
+# line of code to install numpy
+!conda install --yes --prefix {sys.prefix} numpy
+```
+
+```Python
+# sample code for installing numpy using pip
+
+# import sys module
+import sys
+
+# line of code to install numpy
+!{sys.executable} -m pip install numpy
+```
+
+115. If you have already installed a package at the command line using `pip` or `conda`, launching Jupyter from the Anaconda navigator should not require installing the package again.
+
+116. For more on installing Python packages in the Jupyter notebook environment:
+- Jake VanderPlas, ["Installing Python Packages from a Jupyter Notebook"](https://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/) *Pythonic Perambulations personal blog* (5 December 2017)
 
 # Project Prompts
 

@@ -41,7 +41,7 @@ The author consulted the following texts when writing this tutorial:
   * [Other approaches to debugging](#other-approaches-to-debugging)
   * [But why can't I debug using `print()`](#but-why-cant-i-debug-using-print)
 - [Python in Jupyter notebooks](#python-in-jupyter-notebooks)
-  * [Installing packages in Jupyter notebooks](#install-packages-in-jupyter-notebooks)
+  * [Installing packages in Jupyter notebooks](#installing-packages-in-jupyter-notebooks)
 - [Project prompts](#project-prompts)
 - [Lab notebook questions](#lab-notebook-questions)
   * [Notebook questions from this section of the lab](#notebook-questions-from-this-section-of-the-lab)

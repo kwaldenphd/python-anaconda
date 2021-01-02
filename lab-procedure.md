@@ -1,3 +1,6 @@
+
+[Click here](https://raw.githubusercontent.com/kwaldenphd/python-refresh/main/python-refresh-lab-procedure.ipynb) and select the "Save As" option to download this lab as as Jupyter Notebook.
+
 # Python Refresh Lab Procedure
 
 - [Task 1: Hello World](#task-1-hello-world)
@@ -217,7 +220,7 @@ print(cookies)
 47. The print function outputs the modified list.
 `['chocolate chip', 'snickerdoodle', 'oatmeal', 'sugar']`
 
-48. We can also add data to our list using the append function.
+48. We can also add items to our list using the append function.
 ```Python
 cookies = ['chocolate chip', 'snickerdoodle', 'peanut butter', 'sugar']
 cookies.append('oatmeal')

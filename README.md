@@ -28,7 +28,7 @@ Al Sweigart's [*Automate the Boring Stuff With Python*](https://nostarch.com/aut
 The author consulted the following texts when writing this tutorial:
 - Allen Downey, [*Think Python: How to Think Like a Computer Scientist*](https://www.oreilly.com/library/view/think-python-2nd/9781491939406/) (O'Reilly, 2015).
   * Chapter 2 "Variables, Expressions and Statements" (11-20)
-- Quinn Dombrowski, Tassie Gniady, and David Kloster, "Introduction to Jupyter Notebooks," The Programming Historian 8 (2019), https://doi.org/10.46430/phen0087
+- Quinn Dombrowski, Tassie Gniady, and David Kloster, "Introduction to Jupyter Notebooks," *The Programming Historian* 8 (2019), https://doi.org/10.46430/phen0087
 
 # Table of Contents
 

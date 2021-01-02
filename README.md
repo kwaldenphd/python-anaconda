@@ -28,7 +28,7 @@ The author consulted the following texts when writing this tutorial:
   * [Other approaches to debugging](#other-approaches-to-debugging)
   * [But why can't I debug using `print()`](#but-why-cant-i-debug-using-print)
 - [Python in Jupyter notebooks](#python-in-jupyter-notebooks)
-  * [Installing packages in Jupyter notebooks] ADD THIS SECTION
+  * [Installing packages in Jupyter notebooks](#install-packages-in-jupyter-notebooks)
 - [Project prompts](#project-prompts)
 - [Lab notebook questions](#lab-notebook-questions)
   * [Notebook questions from this section of the lab](#notebook-questions-from-this-section-of-the-lab)
@@ -80,7 +80,7 @@ The author consulted the following texts when writing this tutorial:
 - Alex P. Miller, ["Data Science on a Chromebook: How to run Jupyter, Python, and R locally in ChromeOS"](https://alex.miller.im/posts/data-science-chromebook-pixelbook-jupyter-python-r/) *personal blog* (6 March 2019).
 - Noebrian, ["Installing Anaconda on a Chromebook"](https://chromebook.home.blog/2019/01/20/installing-anaconda-on-a-chromebook-no-dev-beta-or-crouton-needed/) *ChromeBooks* (20 January 2019).
 
-<blockquote>QX: Something about installation process in relation to available/provided documentation</blockquote>
+<blockquote>Q1: Describe your experience installing Anaconda using the available/provided documentation. What did you expect to happen? What challenges did you face? How did you solve them?</blockquote>
 
 # Python in Spyder
 
@@ -144,7 +144,7 @@ The author consulted the following texts when writing this tutorial:
 
 34. Work through the ["First Steps with Spyder" resources](https://docs.spyder-ide.org/current/first-steps-with-spyder.html) provided by Spyder. That includes two 3.5 minute videos that introduce you to the basics of the Spyder IDE and how to get started with Python in Spyder.
 
-<blockquote>QX: How is Spyder different than previous IDEs? What do you see as strengths/advantages? What do you see as possible challenges?</blockquote>
+<blockquote>Q2: How is Spyder different than previous IDEs? What do you see as strengths/advantages? What do you see as possible challenges?</blockquote>
 
 <blockquote>OPTIONAL: Take one of your Python files or programs from Elements I and load it into Spyder. Explore how the program runs in a different IDE. In particular, explore Spyder's options to run portions or a selection of the larger program. How does this change the way you interact with the program?</blockquote>
 
@@ -215,7 +215,6 @@ The author consulted the following texts when writing this tutorial:
 
 <p align="center"><a href="https://github.com/kwaldenphd/python-refresh/blob/main/figures/Figure_3.png?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/python-refresh/blob/main/figures/Figure_3.png?raw=true" /></a></p>
 
-
 <p align="center"><a href="https://github.com/kwaldenphd/python-refresh/blob/main/figures/Figure_4.png?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/python-refresh/blob/main/figures/Figure_4.png?raw=true" /></a></p>
 
 59. Let's use this approach and Spyder functionality to debug a number adding program..
@@ -236,7 +235,7 @@ print('The sum is ' + first + second + third)
 - Functions in this sample program include `print()` and `input()`
 - You can always `Step Out` if you accidently step into a function
 
-<blockquote>QX: What type of error does this program return (syntax, runtime, semantic) and why? How would we go about modifying the program to address this error?</blockquote>
+<blockquote>Q3: What type of error does this program return (syntax, runtime, semantic) and why? How would we go about modifying the program to address this error?</blockquote>
 
 ## Other approaches to debugging
 
@@ -280,9 +279,9 @@ logging.debug('End of program')
 
 69. Anytime we call the `logging.debug()` function, the configuration information from the start of the file governs the log formatting and messages.
 
-<blockquote>QX: What happens when we run this program? What kinds of log messages do we get, and what information do they give us?</blockquote>
+<blockquote>Q4: What happens when we run this program? What kinds of log messages do we get, and what information do they give us?</blockquote>
 
-<blockquote>QX: Is this program doing what we expect? Where would you go next with debugging or addressing the error?</blockquote>
+<blockquote>Q5: Is this program doing what we expect? Where would you go next with debugging or addressing the error?</blockquote>
 
 ## But why can't I debug using `print()`
 
@@ -298,7 +297,7 @@ logging.debug('End of program')
 
 <blockquote>Visit Python's <a href="https://docs.python.org/3/howto/logging.html">Logging HOWTO</a> documentation to learn more about the logging module.</blockquote>
 
-<blockquote>QX: Thoughts on this approach to identifying what's happening in your program. What seems appealing, what seems challenging, when could this be useful?</blockquote>
+<blockquote>Q6: What are your thoughts on this approach to identifying what's happening in your program? What seems appealing? What seems challenging? When or how could this approach be useful?</blockquote>
 
 # Python in Jupyter notebooks
 
@@ -453,11 +452,25 @@ import sys
 
 Run [Python refresh lab procedure](https://github.com/kwaldenphd/python-refresh/blob/main/lab-procedure.md) in both environments. Include `.py` file and Jupyter notebook `.ipynb` file that document your experience working through the prompts. 
 
-<blockquote>QX: Compare your experience working in both IDEs. What seems appealing about each, what seems challenging about each. Your preference or situations where you'd prefer one over the other</blockquote>
+<blockquote>Q7: Compare your experience working in both IDEs. What seems appealing about each? What seems challenging? Based on this experience, what is your preference, or are there situations in which you'd prefer one over the other?</blockquote>
 
 # Lab notebook questions
 
 ## Notebook questions from this section of the lab
+
+Q1: Describe your experience installing Anaconda using the available/provided documentation. What did you expect to happen? What challenges did you face? How did you solve them?
+
+Q2: How is Spyder different than previous IDEs? What do you see as strengths/advantages? What do you see as possible challenges?
+
+Q3: What type of error does this program return (syntax, runtime, semantic) and why? How would we go about modifying the program to address this error?
+
+Q4: What happens when we run this program? What kinds of log messages do we get, and what information do they give us?
+
+Q5: Is this program doing what we expect? Where would you go next with debugging or addressing the error?
+
+Q6: What are your thoughts on this approach to identifying what's happening in your program? What seems appealing? What seems challenging? When or how could this approach be useful?
+
+Q7: Compare your experience working in both IDEs. What seems appealing about each? What seems challenging? Based on this experience, what is your preference, or are there situations in which you'd prefer one over the other?
 
 ## Notebook questions from the [Python Refresh Lab Procedure](https://github.com/kwaldenphd/python-refresh/blob/main/lab-procedure.md)
 

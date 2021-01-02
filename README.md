@@ -1,4 +1,4 @@
-# Lab #1: The Python Ecosystem
+# The Python Ecosystem
 
 <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license"><img style="border-width: 0;" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" alt="Creative Commons License" /></a>
 This tutorial is licensed under a <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
@@ -15,6 +15,8 @@ By the end of this lab, students will be able to:
 - Understand the core components of the Jupyter Notebooks environment
 - Compare and contrast the Spyder and Jupyter environments
 - Refresh their knowledge of core Python syntax
+
+[Click here](https://raw.githubusercontent.com/kwaldenphd/python-refresh/main/python-refresh.ipynb) and select the "Save As" option to download this lab as as Jupyter Notebook.
 
 ## Acknowledgements
 
@@ -427,7 +429,6 @@ logging.debug('End of program')
 
 !pip install numpy
 ```
-
 112. Resist this temptation!
 
 113. When installing a package in a notebook environment, you want to make sure the package is installed in the currently-running Jupyter kernel.
@@ -531,4 +532,3 @@ for data in book.values():
 ```  
   
 QR: Explain the `if` functions in your own words. What does this program output? Why?
-

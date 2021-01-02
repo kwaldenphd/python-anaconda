@@ -7,7 +7,7 @@ This tutorial is licensed under a <a href="http://creativecommons.org/licenses/b
 
 ## Acknowledgements
 
-Information and exercises in this lab are adapted from the following texts:
+Information and exercises in this lab are adapted from the following text:
 
 Al Sweigart's [*Automate the Boring Stuff With Python*](https://nostarch.com/automatestuff2) (No Starch Press, 2020).
 - Chapter 11, "Debugging" (249-266)
@@ -36,23 +36,23 @@ The author consulted the following texts when writing this tutorial:
 
 # Different types of Python environments
 
-In the Fall 2020 iteration of Elements I, we used the browser-based IDE [Replit](https://repl.it/).
+1. In the Fall 2020 iteration of Elements I, we used the browser-based IDE [Replit](https://repl.it/).
 
-What is an IDE? "An integrated development environment (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of at least a source code editor, build automation tools and a debugger" ([Wikipedia](https://en.wikipedia.org/wiki/Integrated_development_environment)).
+2. What is an IDE? "An integrated development environment (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of at least a source code editor, build automation tools and a debugger" ([Wikipedia](https://en.wikipedia.org/wiki/Integrated_development_environment)).
 
-An IDE can include features like syntax highlighting, code completion, version control, and debugging.
+3. An IDE can include features like syntax highlighting, code completion, version control, and debugging.
 
-There are a WIDE range of IDEs that are proprietary or open-source, tailored to a specific language or able to work across languages.
+5. There are a WIDE range of IDEs that are proprietary or open-source, tailored to a specific language or able to work across languages.
 
-Some common IDEs include Eclipse, Geany, Brackets, Atom, PyCharm, Spyder, RStudio, etc. For more in IDEs, visit Wikipedia's ["Comparison of integrated development environments"](https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments) page.
+5. Some common IDEs include Eclipse, Geany, Brackets, Atom, PyCharm, Spyder, RStudio, etc. For more in IDEs, visit Wikipedia's ["Comparison of integrated development environments"](https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments) page.
 
-Replit (generally) worked for (most of) our needs in Elements I. But it ran into problems with more complex programs or programs involving external files/datasets/etc. 
+6. Replit (generally) worked for (most of) our needs in Elements I. But it ran into problems with more complex programs or programs involving external files/datasets/etc. 
 
-So in this semester, we're going to install Python on your local computer, using a distribution called Anaconda.
+7. So in this semester, we're going to install Python on your local computer, using a distribution called Anaconda.
 
-What is Anaconda? "Anaconda is a open-source distribution of the Python and R programming languages for scientific computing (data science, machine learning applications, large-scale data processing, predictive analytics, etc.), that aims to simplify package management and deployment. The distribution includes data-science packages suitable for Windows, Linux, and macOS. It is developed and maintained by Anaconda, Inc., which was founded by Peter Wang and Travis Oliphant in 2012" ([Wikipedia](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution))).
+8. What is Anaconda? "Anaconda is a open-source distribution of the Python and R programming languages for scientific computing (data science, machine learning applications, large-scale data processing, predictive analytics, etc.), that aims to simplify package management and deployment. The distribution includes data-science packages suitable for Windows, Linux, and macOS. It is developed and maintained by Anaconda, Inc., which was founded by Peter Wang and Travis Oliphant in 2012" ([Wikipedia](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution))).
 
-The Anaconda environment includes a number of specific tools and programs, including:
+9. The Anaconda environment includes a number of specific tools and programs, including:
 - JupyterLab
 - Jupyter Notebook
 - Qt Console
@@ -62,20 +62,20 @@ The Anaconda environment includes a number of specific tools and programs, inclu
 - RStudio
 - Visual Code Studio
 
-This semester, we'll be using the Jupyter Notebook and Spyder components of Anaconda.
+10. This semester, we'll be using the Jupyter Notebook and Spyder components of Anaconda.
 
 # Installing Anaconda
 
-Windows/PC instructions:
+11. Windows/PC instructions:
 - Anaconda Documentation, ["Installing on Windows"](https://docs.anaconda.com/anaconda/install/windows/) *Anaconda* (2020).
 - ProgrammingKnowledge, ["Install Anaconda Python, Jupyter Notebook and Spyder on Windows 10"](https://youtu.be/5mDYijMfSzs) *YouTube video* (4 September 2018).
 
-Mac OS instructions:
+12. Mac OS instructions:
 - Anaconda Documentation, ["Installing on macOS"](https://docs.anaconda.com/anaconda/install/mac-os/) *Anaconda* (2020).
 - Understanding Data, ["Easily Install Anaconda Python Distribution On Mac OS X"](https://youtu.be/V6ZAv7hBH6Y) *YouTube video* (16 October 2019).
 
 
-Chromebook instructions:
+13. Chromebook instructions:
 - Alex P. Miller, ["Data Science on a Chromebook: How to run Jupyter, Python, and R locally in ChromeOS"](https://alex.miller.im/posts/data-science-chromebook-pixelbook-jupyter-python-r/) *personal blog* (6 March 2019).
 - Noebrian, ["Installing Anaconda on a Chromebook"](https://chromebook.home.blog/2019/01/20/installing-anaconda-on-a-chromebook-no-dev-beta-or-crouton-needed/) *ChromeBooks* (20 January 2019).
 
@@ -83,9 +83,9 @@ Chromebook instructions:
 
 # Python in Spyder
 
-"Spyder is a free and open source scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts. It features a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package" ([Spyder documentation](https://www.spyder-ide.org/)).
+14. What is Spyder? "Spyder is a free and open source scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts. It features a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package" ([Spyder documentation](https://www.spyder-ide.org/)).
 
-Spyder's core components include:
+15. Spyder's core components include:
 - Editor
 - IPython console
 - Variable explorer
@@ -93,49 +93,49 @@ Spyder's core components include:
 - Debugger
 - Help
 
-These robust Python features in Spyder will be incredibly useful as we start to do more work with datasets, visualizations (plots), and debugging in more complex programming environments.
+16. These robust Python features in Spyder will be incredibly useful as we start to do more work with datasets, visualizations (plots), and debugging in more complex programming environments.
 
-Open the Anaconda navigator and select the option to launch Spyder.
+17. Open the Anaconda navigator and select the option to launch Spyder.
 
-NOTE: When we were working in Replit, all files that were part of our Python project were in the same virtual workspace. 
+18. NOTE: When we were working in Replit, all files that were part of our Python project were in the same virtual workspace. 
 
-That's not going to be the case when working in a desktop IDE like Spyder. 
+19. That's not going to be the case when working in a desktop IDE like Spyder. 
 
-Think of this as the difference between working with files in Google Drive versus on your local computer. 
+20. Think of this as the difference between working with files in Google Drive versus on your local computer. 
 
-You can set a working directory, which is where Spyder will look for external files you are wanting to access from within a Python program. The working directory is also where Python will save `.py` files you build.
+21. You can set a working directory, which is where Spyder will look for external files you are wanting to access from within a Python program. The working directory is also where Python will save `.py` files you build.
 
-Click on the folder icon in the top-right hand corner of Spyder (next to the arrow icon) to set a working directory. It doe--where you save `.py` files and other files (think data files) you might be wanting to access as part of a Python program.
+22. Click on the folder icon in the top-right hand corner of Spyder (next to the arrow icon) to set a working directory. It doe--where you save `.py` files and other files (think data files) you might be wanting to access as part of a Python program.
 
-Now, files don't have to be in your current working directory for you to access them in Python. But you'll need to provide the full file path (i.e. location information or directory information for where that file is located on your computer).
+23. Now, files don't have to be in your current working directory for you to access them in Python. But you'll need to provide the full file path (i.e. location information or directory information for where that file is located on your computer).
 
-Go ahead and create an `EoC_II` folder and set that folder as your working directory in Spyder. It might also be a good idea to start creating lab-specific sub-folders within your `EoC_II` parent folder. 
+24. Go ahead and create an `EoC_II` folder and set that folder as your working directory in Spyder. It might also be a good idea to start creating lab-specific sub-folders within your `EoC_II` parent folder. 
 
-This will help with organization as we move through labs and work with a variety of sample files and datasets.
+25. This will help with organization as we move through labs and work with a variety of sample files and datasets.
 
-Spyder has three default panes that show up when you launch the program.
+26. Spyder has three default panes that show up when you launch the program.
 
 IMAGE
 
-Your `.py` file shows up on the left-hand side of the program window. This is where you will write Python code. You can have multiple `.py` files open in Spyder and navigate between the tabs. 
+27. Your `.py` file shows up on the left-hand side of the program window. This is where you will write Python code. You can have multiple `.py` files open in Spyder and navigate between the tabs. 
 
-The top-right pane has four default options:
+28. The top-right pane has four default options:
 - Variable explorer, which lets you see named variables in your program
 - Help, which provides additional documentation, information, or resources
 - Plots, which will show visualizations generated by your program
 - Files, which will show all files currently open or active in your Spyder workspace
 
-The bottom-right pane is the Console, which lets you execute and test Python commands. You can have multiple consoles open simultaneously.
+29. The bottom-right pane is the Console, which lets you execute and test Python commands. You can have multiple consoles open simultaneously.
 
-So how is the Console different from your `.py` file?
+30. So how is the Console different from your `.py` file?
 
-In the `.py` file you are writing a Python program that will run or execute when the file is called. You make updates to that file, save changes, etc.
+31. In the `.py` file you are writing a Python program that will run or execute when the file is called. You make updates to that file, save changes, etc.
 
-The Console lets you execute Python commands but is not saving those commands as part of a `.py` file. 
+32. The Console lets you execute Python commands but is not saving those commands as part of a `.py` file. 
 
-Great for testing. Less great for building out complex programs.
+33. Great for testing. Less great for building out complex programs.
 
-Work through the ["First Steps with Spyder" resources](https://docs.spyder-ide.org/current/first-steps-with-spyder.html) provided by Spyder. That includes two 3.5 minute videos that introduce you to the basics of the Spyder IDE and how to get started with Python in Spyder.
+34. Work through the ["First Steps with Spyder" resources](https://docs.spyder-ide.org/current/first-steps-with-spyder.html) provided by Spyder. That includes two 3.5 minute videos that introduce you to the basics of the Spyder IDE and how to get started with Python in Spyder.
 
 <blockquote>QX: How is Spyder different than previous IDEs? What do you see as strengths/advantages? What do you see as possible challenges?</blockquote>
 
@@ -143,36 +143,45 @@ Work through the ["First Steps with Spyder" resources](https://docs.spyder-ide.o
 
 # Debugging
 
-To paraphrase an old programming joke, writing code is 90% of the work of programming. Debugging is the other 90%.
+35. To paraphrase an old programming joke, writing code is 90% of the work of programming. Debugging is the other 90%.
 
-You've been working on a program for hours, your head hurts, and something still isn't working. We all know a version of that feeling.
+36. You've been working on a program for hours, your head hurts, and something still isn't working. We all know a version of that feeling.
 
-There's no easy solution that will prevent all problems (or "bugs") in your code. But having strategies for testing your code, recognizing and making sense of error messages, and methodically debugging your code can help immensely.
+37. There's no easy solution that will prevent all problems (or "bugs") in your code. But having strategies for testing your code, recognizing and making sense of error messages, and methodically debugging your code can help immensely.
 
-Python errors will usually fall into three types:
-- Syntax: refers to the structure of a program and rules about that structure. Syntax errors involve things like indentation, parenthesis, etc. The Python interpreter expects the language to be structured a specific way, and throws a syntax error when it's not.
-- Runtime errors, or exceptions: appears after a program has started running. These errors indicate something unexpected has happened that interrupts or stops the program execution. Things that can cause a runtime error include:
-  * Misspelled or incorrectly capitalized variables or function names
-  * Dividing by zero
-  * Mismatched data types (i.e. attempting to perform operations on data of the wrong type)
-  * Attempting to use a type conversion function on a value that can't be converted
-- Semantic: relates to meaning. Semantic errors have to do with the meaning (or purpose/intent) of your code. Semantic errors don't show up as error messages-but the program will not do what you expect it to do. 
+38. Python errors will usually fall into three types: syntax, runtime, and semantic.
 
-The debugging strategies discussed here will focus on semantic errors but are useful for all types of errors.
+39. Syntax refers to the structure of a program and rules about that structure. 
+
+40. ***Syntax errors*** involve things like indentation, parenthesis, etc. The Python interpreter expects the language to be structured a specific way, and throws a syntax error when it's not.
+
+41. ***Runtime errors***, or ***exceptions***: appears after a program has started running. These errors indicate something unexpected has happened that interrupts or stops the program execution. 
+
+42. Things that can cause a runtime error include:
+- Misspelled or incorrectly capitalized variables or function names
+- Dividing by zero
+- Mismatched data types (i.e. attempting to perform operations on data of the wrong type)
+- Attempting to use a type conversion function on a value that can't be converted
+
+43. Semantic: relates to meaning. 
+
+44. ***Semantic errors*** have to do with the meaning (or purpose/intent) of your code. Semantic errors don't show up as error messages-but the program will not do what you expect it to do. 
+
+45. The debugging strategies discussed here will focus on semantic errors but are useful for all types of errors.
 
 ## Stepwise debugging in Spyder
 
-Spyder will catch many syntax and runtime errors. 
+46. Spyder will catch many syntax and runtime errors. 
 
-Hover over a red `X` by any of your lines of code to see more information about a possible error.
+47. Hover over a red `X` by any of your lines of code to see more information about a possible error.
 
-Spyder integrates the enhanced `ipdb` debugger, which gives you robust options for troubleshooting or debugging your code.
+48. Spyder integrates the enhanced `ipdb` debugger, which gives you robust options for troubleshooting or debugging your code.
 
-Specifically, the debugger will let you run a program line by line, running a single line of code and waiting for you to tell it to continue.
+49. Specifically, the debugger will let you run a program line by line, running a single line of code and waiting for you to tell it to continue.
 
-Running your program through this kind of debugging is immensely valuable for tracking down bugs or catching complex issues in a program.
+50. Running your program through this kind of debugging is immensely valuable for tracking down bugs or catching complex issues in a program.
 
-This mode of debugging includes the following possible steps or "moves":
+51. This mode of debugging includes the following possible steps or "moves":
 - Continue (run the program until the next breakpoint)
 - Step in (executes the next line of code; if the next line of code is a function, the debugger will 'step into' the first line of that function)
 - Step over (executes the next line of code, but will not go line-by-line through the function; the debugger 'steps over' the function code and waits for the function call to return)
@@ -183,7 +192,8 @@ FIGURE 3
 
 FIGURE 4
 
-Let's use this approach and Spyder functionality to debug a number adding program.
+52. Let's use this approach and Spyder functionality to debug a number adding program..
+
 ```Python
 print('Enter the first number to add: ')
 first = input()
@@ -194,9 +204,9 @@ third = input()
 print('The sum is ' + first + second + third)
 ```
 
-First run the program without the debugger enabled. What happens?
+53. First run the program without the debugger enabled. What happens?
 
-Debug the file going line-by-line. Remember to use `Step Over` to execute functions without going into each line of the function code.
+54. Debug the file going line-by-line. Remember to use `Step Over` to execute functions without going into each line of the function code.
 - Functions in this sample program include `print()` and `input()`
 - You can always `Step Out` if you accidently step into a function
 
@@ -204,23 +214,23 @@ Debug the file going line-by-line. Remember to use `Step Over` to execute functi
 
 ## Other approaches to debugging
 
-If you've enver put a `print()` statement in your code to output a variable's value while the program is running, you have used a form of `logging` to debug your code.
+55. If you've enver put a `print()` statement in your code to output a variable's value while the program is running, you have used a form of `logging` to debug your code.
 
-Python's `logging` module lets you record custom messages that output as part of your program. 
+56. Python's `logging` module lets you record custom messages that output as part of your program. 
 
-These `log` messages describe when the program reaches a point where a logging function is called and what variables have been specified at that point.
+57. These `log` messages describe when the program reaches a point where a logging function is called and what variables have been specified at that point.
 
-Step one is to import the `logging` module and set up basic configuration for the module at the top of your `.py` file.
+58. Step one is to import the `logging` module and set up basic configuration for the module at the top of your `.py` file.
 ```Python
 import logging
 logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
 ```
 
-This configuration information instructs Python to create a `LogRecord` object when a logging function is called, and to include specific information about that event in the `LogRecord` object.
+59. This configuration information instructs Python to create a `LogRecord` object when a logging function is called, and to include specific information about that event in the `LogRecord` object.
 
-So how would we use the `logging` module when writing a program?
+60. So how would we use the `logging` module when writing a program?
 
-Say we were creating a function that calcualted the factorial of a given number.
+61. Say we were creating a function that calcualted the factorial of a given number.
 - Factorial 4 is 1 x 2 x 3 x 4 = 24
 - Factorial 7 is 1 x 2 x 3 x 4 x 5 x 6 x 7 = 5040
 
@@ -242,23 +252,23 @@ print(factorial(5))
 logging.debug('End of program')
 ```
 
-Anytime we call the `logging.debug()` function, the configuration information from the start of the file governs the log formatting and messages.
+62. Anytime we call the `logging.debug()` function, the configuration information from the start of the file governs the log formatting and messages.
 
-What happens when we run this program? What kinds of log messages do we get, and what information do they give us?
+<blockquote>QX: What happens when we run this program? What kinds of log messages do we get, and what information do they give us?</blockquote>
 
-Is this program doing what we expect? Where would you go next with debugging or addressing the error?
+<blockquote>QX: Is this program doing what we expect? Where would you go next with debugging or addressing the error?</blockquote>
 
 ## But why can't I debug using `print()`
 
-It can seem unwieldy to configure the `logging` module and write lines of code dedicated just to logging what's happening in your program.
+63. It can seem unwieldy to configure the `logging` module and write lines of code dedicated just to logging what's happening in your program.
 
-But think about the factorial example. Log messages led us right to the program's issue. 
+64. But think about the factorial example. Log messages led us right to the program's issue. 
 
-Trying to debug using `print()` calls means you'll have to go back through each line of your program to remove `print()` statements used for debugging (while also making sure you aren't removing `print()` statements that are a component of the actual program).
+65. Trying to debug using `print()` calls means you'll have to go back through each line of your program to remove `print()` statements used for debugging (while also making sure you aren't removing `print()` statements that are a component of the actual program).
 
-Think of the `logging` module as a report that generates alongside your program output as it executes. The program executes and you also have useful log information about what happened along the way.
+66. Think of the `logging` module as a report that generates alongside your program output as it executes. The program executes and you also have useful log information about what happened along the way.
 
-Once you're done debugging the program, you can add the `logging.disable()` function to the start of your program to supress the log messages without actually having to modify your program.
+67. Once you're done debugging the program, you can add the `logging.disable()` function to the start of your program to supress the log messages without actually having to modify your program.
 
 <blockquote>Visit Python's <a href="https://docs.python.org/3/howto/logging.html">Logging HOWTO</a> documentation to learn more about the logging module.</blockquote>
 
@@ -266,16 +276,17 @@ Once you're done debugging the program, you can add the `logging.disable()` func
 
 # Python in Jupyter notebooks
 
-What is Jupyter?
-- "Project Jupyter is a non-profit, open-source project, born out of the IPython Project in 2014 as it evolved to support interactive data science and scientific computing across all programming languages. Jupyter will always be 100% open-source software, free for all to use and released under the liberal terms of the modified BSD license" (["About Us"](https://jupyter.org/about), *Jupyter.org*)
+68. What is Jupyter?
 
-Project Jupyter receives funding from a range of non-profit foundations and corporate partners that include:
+69. "Project Jupyter is a non-profit, open-source project, born out of the IPython Project in 2014 as it evolved to support interactive data science and scientific computing across all programming languages. Jupyter will always be 100% open-source software, free for all to use and released under the liberal terms of the modified BSD license" (["About Us"](https://jupyter.org/about), *Jupyter.org*)
+
+70. Project Jupyter receives funding from a range of non-profit foundations and corporate partners that include:
 - Alfred P. Sloan Foundation
 - Gordon and Betty Moore Foundation
 - Google
 - Microsoft
 
-Institutional partners for Project Jupyter include:
+71. Institutional partners for Project Jupyter include:
 - Apple
 - Bloomberg
 - Netflix
@@ -283,11 +294,11 @@ Institutional partners for Project Jupyter include:
 - Berkeley
 - Amazon Web Services (AWS)
 
-The name Jupyter is a reference to the three core languages supported by the project: **Ju**lia, **Py**thon, and **R**.
+72. The name Jupyter is a reference to the three core languages supported by the project: **Ju**lia, **Py**thon, and **R**.
 
-And what is a Jupyter notebook?
+73. And what is a Jupyter notebook?
 
-According to "[The Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html)" documentation:
+74. According to "[The Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html)" documentation:
 
 <blockquote>The notebook extends the console-based approach to interactive computing in a qualitatively new direction, providing a web-based application suitable for capturing the whole computation process: developing, documenting, and executing code, as well as communicating the results. The Jupyter notebook combines two components:
  <ul>
@@ -296,61 +307,67 @@ According to "[The Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/
  </ul>
  </blockquote>
 
-A Jupyter notebook is a file (the notebook document) that displays or renders in a web browser.
+75. A Jupyter notebook is a file (the notebook document) that displays or renders in a web browser.
 
-We'll be launching Jupyter Notebooks through Anaconda. The web application component of the notebook will be hosted on your local computer and the notebook document will save to a file directory on your local computer.
+76. We'll be launching Jupyter Notebooks through Anaconda. 
+
+77. The web application component of the notebook will be hosted on your local computer and the notebook document will save to a file directory on your local computer.
 
 FIGURE ONE
 
 FIGURE FIVE
 
-It may take some time for the notebook to open in a browser window.
+78. It may take some time for the notebook to open in a browser window.
 
 FIGURE 6
 
-When in a new notebook document, you have four main components to the user interface:
+79. When in a new notebook document, you have four main components to the user interface:
 - Notebook name
 - Menu bar
 - Toolbar
 - Code cell
 
-The notebook name is what the `.ipynb` file created via the Jupyter notebook will be saved as.
+80. The notebook name is what the `.ipynb` file created via the Jupyter notebook will be saved as.
 
-Click on the default notebook name (usually `Untitled`) to rename the notebook.
+81. Click on the default notebook name (usually `Untitled`) to rename the notebook.
 
-The menu bar includes drop-down options used to manipulate the notebook functionality.
+82. The menu bar includes drop-down options used to manipulate the notebook functionality.
 
-The toolbar icons give you quick access to the most commonly-used features of the notebook environment.
+83. The toolbar icons give you quick access to the most commonly-used features of the notebook environment.
 
-Code cells are the default type of cell.
+84. Code cells are the default type of cell.
 
-But why are there cells?
+85. But why are there cells?
 
-Jupyter notebooks consist of a sequence of cells.
+86. Jupyter notebooks consist of a sequence of cells.
 
-A cell is a multiline text input field. 
+87. A cell is a multiline text input field. 
 
-You can execute the contents of a cell by using `Shift-Enter`, clicking the `Play` button in the toolbar, or the `Cell` and `Run` icons in the menu bar.
+88. You can execute the contents of a cell by using `Shift-Enter`, clicking the `Play` button in the toolbar, or the `Cell` and `Run` icons in the menu bar.
 
-How a cell executes is determined by its type.
+89. How a cell executes is determined by its type.
 
-There are three types of Jupyter notebook cells.
-- Code cells: allow you to edit and write code with full syntax highlighting and tab completion
-- Markdown cells: allow you to document the computational process using descriptive text formatted using the markdown language
-- Raw cells: allow you to write output directly. These cells are not evaluated by the notebook and render unmodified.
+90. There are three types of Jupyter notebook cells.
 
-You can edit or work within a code cell until you get the desired output, then move on to a new cell.
+91. ***Code cells*** allow you to edit and write code with full syntax highlighting and tab completion.
 
-You can use markdown cells along the way to document your process using narrative text (alongside or in addition to code comments used in code cells).
-- To learn more about formatting text in markdown, visit Adam Pritchard's ["Markdown Cheatsheet"](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) resource page.
+91. ***Markdown cells*** allow you to document the computational process using descriptive text formatted using the markdown language.
 
-You can download a Jupyter notebook as a `.ipynb` file (this is the default option).
+92. ***Raw cells*** allow you to write output directly. These cells are not evaluated by the notebook and render unmodified.
 
-You can also use the `File` - `Download as` menu options to download the notebook in a number of other formats, including `.py`, `.pdf`, or `.html`.
+93. You can edit or work within a code cell until you get the desired output, then move on to a new cell.
 
-There's a lot to love about Jupyter notebooks. 
+94. You can use markdown cells along the way to document your process using narrative text (alongside or in addition to code comments used in code cells).
 
-A few challenges or drawbacks:
+95. To learn more about formatting text in markdown, visit Adam Pritchard's ["Markdown Cheatsheet"](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) resource page.
+
+96. You can download a Jupyter notebook as a `.ipynb` file (this is the default option).
+
+97. You can also use the `File` - `Download as` menu options to download the notebook in a number of other formats, including `.py`, `.pdf`, or `.html`.
+
+98. There's a lot to love about Jupyter notebooks. 
+
+99. A few challenges or drawbacks:
 - Version control especially in collaborative environments is virtually impossible
 - Jupyter lacks the debugging tools and autocompletion features of an IDE
 - Testing and debugging code is virtually impossible
@@ -360,11 +377,11 @@ A few challenges or drawbacks:
 
 <blockquote>Citation: Alexander Mueller, <a href= "https://towardsdatascience.com/5-reasons-why-jupyter-notebooks-suck-4dc201e27086">"5 reasons why jupyter notebooks suck"</a>, <i>Towards Data Science</i> (24 March 2018)</blockquote>
 
-So when could you use Jupyter notebooks? 
+100. So when could you use Jupyter notebooks? 
 
-Jupyter notebooks are fantastic tools for exploration. 
+101. Jupyter notebooks are fantastic tools for exploration. 
 
-They also work well for documenting process, or in situations when you might need to alternate between code and other kinds of text (like say in a lab notebook).
+102. They also work well for documenting process, or in situations when you might need to alternate between code and other kinds of text (like say in a lab notebook).
 
 # Project Prompts
 
@@ -376,7 +393,7 @@ Run [Python refresh lab procedure](https://github.com/kwaldenphd/python-refresh/
 
 ## Notebook questions from this section of the lab
 
-## Notebook questions from the Python Refresh Lab Procedure
+## Notebook questions from the [Python Refresh Lab Procedure](https://github.com/kwaldenphd/python-refresh/blob/main/lab-procedure.md)
 
 QA: In your own words, explain the difference between the `print(hello)` command we just used and `print(“hello”)`.
 

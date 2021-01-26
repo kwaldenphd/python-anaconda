@@ -538,23 +538,23 @@ else:
 
 84. So far we’ve written programs that have included the data being processed, but many programs ask for input from their users. 
 
-85. The `raw_input` function allows you to prompt a user for string-based information. 
+85. The `input` function allows you to prompt a user for string-based information. 
 ```Python
-name = raw_input("Please enter your name: ")
+name = input("Please enter your name: ")
 print("Hello, " + name)
 ```
 <blockquote>QM: What did the program output? Explain this program in your own words.</blockquote>
 
 86. Here we set the variable name to the input that we receive from the user. 
 
-87. The text in the `()` following the `raw_input` function provides the prompt for the user. We can then reuse the name variable in the `print` function.
+87. The text in the `()` following the `input` function provides the prompt for the user. We can then reuse the name variable in the `print` function.
 
 88. Now let’s try an example with numbers. The following program sets a number and asks the user to guess the number.  Notice that we use the `input()` function for integers.
 ```Python
 #sets variable secret_number
 secret_number = 3
 
-#asks the user for a number. NOTE we use input instead of raw_input for integers
+#asks the user for a number. NOTE we use input for integers
 number = input("Guess a number between 1 and 10: ")
 
 #sets up a loop that will continue to run while the number does not match the secret number

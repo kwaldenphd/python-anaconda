@@ -252,7 +252,7 @@ print('The sum is ' + first + second + third)
 
 ## Other approaches to debugging
 
-62. If you've enver put a `print()` statement in your code to output a variable's value while the program is running, you have used a form of `logging` to debug your code.
+62. If you've never put a `print()` statement in your code to output a variable's value while the program is running, you have used a form of `logging` to debug your code.
 
 63. Python's `logging` module lets you record custom messages that output as part of your program. 
 

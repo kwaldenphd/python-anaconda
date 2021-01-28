@@ -35,7 +35,7 @@ print("Hello World!")
 
 6. You have just successfully written your first Python program. What just happened? 
 
-7. When you execute the program, the IDE runs the command through the Python interpreter, this is another program that reads though the Python code that you just wrote and determines what each piece of code means and then executes the code (or runs it). 
+7. When you execute the program, the IDE runs the command through the Python interpreter, this is another program that reads through the Python code that you just wrote and determines what each piece of code means and then executes the code (or runs it). 
 
 8. In this example, the Python interpreter recognizes the word print as a Python function. This function allows you to “print” to the screen or send output to the computer screen. 
 
@@ -99,7 +99,7 @@ full_name = first_name + " " + last name
 ```Python
 first_name = "katherine"
 last_name = "walden"
-full_name = first_name + " " + last name
+full_name = first_name + " " + last_name
 
 print(full_name)
 ```
@@ -108,7 +108,7 @@ print(full_name)
 ```Python
 first_name = "katherine"
 last_name = "walden"
-full_name = first_name + " " + last name
+full_name = first_name + " " + last_name
 
 print("Hello, " + full_name.title() + "!")
 ```
@@ -116,7 +116,7 @@ print("Hello, " + full_name.title() + "!")
 ```Python
 first_name = "katherine"
 last_name = "walden"
-full_name = first_name + " " + last name
+full_name = first_name + " " + last_name
 
 sentence="Hello, " + full_name.title() + "!"
 
@@ -158,7 +158,7 @@ print("Welcome to " + course_name.title() + " CSE:" + course_number)
 
 31. When we want numbers to be read as characters rather than numeric digits, we have to use the string method `str()` to convert the integer into a string of characters.
 ```Python
-print("Welcome to " + course_name.title() + " CSE:" + str(course_number())
+print("Welcome to " + course_name.title() + " CSE:" + str(course_number))
 ```
 
 # Task 5: Creating Lists
@@ -238,7 +238,7 @@ my_pets.append('Sandy Koufax')
 print(my_pets)
 ```
 
-51. In this block of code, we started with an empty list `[]`. Then the next two lines with `append` added new items to the list.
+51. In this block of code, we started with an empty list `[]`. Then the next three lines with `append` added new items to the list.
 
 <blockquote>QE: Create your own list using the program above as an example. Share your code in your notebook as well as the result. What is the number position for each of the items in your list? How would you return the value of the first item? How would you return the value of the last item?</blockquote>
 
@@ -252,7 +252,7 @@ print(fruit)
 ```
 54. This block of code adds orange to the second position on the list (index position 1).
 
-55. The output is `['apple', 'orange', 'kiwi', 'banana']`
+55. The output is `['apple', 'orange', 'pear', 'banana']`
 
 56. Conversely, the `del` statement allows you to delete items from your list using the index number.
 
@@ -384,7 +384,7 @@ print(sum(patterns))
 characters = ['Arya', ' Benjen', 'Bran', 'Catelyn', 'Eddard', 'Rickon', 'Robb', 'Sansa']
 
 for character in characters:
-  print(character.title() + "Stark")
+  print(character.title() + " Stark")
 ```
 
 <blockquote>Note: I used the # to create a comment and describe the purpose of this Python program. Comments are written for the human users of the program and will not be processed as code by the computer. Every programming language uses a different set of symbols to designate comments in the code. It’s good practice to include comments in your code so that you code can be modified and reused.</blockquote>
@@ -580,7 +580,7 @@ print("You guessed it!")
 ```
 
 89. Program without the comments.
-```Python
+```Python 
 secret_number = 3
 
 number = input("Guess a number between 1 and 10: ")
@@ -733,7 +733,7 @@ if 'title' not in book.keys():
   print("The Title is missing.")
 
 if 'HTML' not in book.values():
-  print("The title is " + work['title'])
+  print("The title is " + book['title'])
 ```
 
 <blockquote>QR: Explain the if functions in your own words. What does this program output? Why?</blockquote>

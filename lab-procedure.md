@@ -586,7 +586,7 @@ secret_number = 3
 number = input("Guess a number between 1 and 10: ")
 
 while int(number) != secret_number:
-  if int(number) == secret_number + 1 or int(number) == secret_number -1:
+  if int(number) == secret_number + 1 or int(number) == secret_number - 1:
     print("You are really close!")
   elif int(number) < secret_number:
     print("Too low!")

@@ -558,15 +558,15 @@ secret_number = 3
 number = input("Guess a number between 1 and 10: ")
 
 #sets up a loop that will continue to run while the number does not match the secret number
-while number !=secret_number:
+while int(number) != secret_number:
 
   #sets up conditional statements that return clues for the user
-  if number == secret_number + 1 or number == secret_number -1:
+  if int(number) == secret_number + 1 or int(number) == secret_number - 1:
     print("You are really close!")
 
   #NOTE that the elif statement here stands for "else if"
   #you want to use elif if you have more than two conditions
-  elif number < secret_number:
+  elif int(number) < secret_number:
     print("Too low!")
 
   else:
@@ -585,10 +585,10 @@ secret_number = 3
 
 number = input("Guess a number between 1 and 10: ")
 
-while number !=secret_number:
-  if number == secret_number + 1 or number == secret_number -1:
+while int(number) != secret_number:
+  if int(number) == secret_number + 1 or int(number) == secret_number -1:
     print("You are really close!")
-  elif number < secret_number:
+  elif int(number) < secret_number:
     print("Too low!")
   else:
     print("Too high!")

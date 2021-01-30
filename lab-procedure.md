@@ -88,12 +88,12 @@ print(name.title())
 
 <blockquote>QB: Describe the syntax three commands that we just used in your own words. Define the function and method for each example.</blockquote>
 
+20. Let’s modify our code a bit and create two new variables `first_name` for your first name and `last_name` for your last name. We can then combine these two string variables (called concatenation) in a third variable called `full_name`.
 ```Python
 first_name = "katherine"
 last_name = "walden"
-full_name = first_name + " " + last name
+full_name = first_name + " " + last_name
 ```
-20. Let’s modify our code a bit and create two new variables `first_name` for your first name and `last_name` for your last name. We can then combine these two string variables (called concatenation) in a third variable called `full_name`.
 
 21. If we want our first and last name to be separated by a space, we need to tell Python to add one in by including the `“ “`, otherwise, each string will be printed back-to-back.
 ```Python

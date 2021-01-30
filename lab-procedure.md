@@ -137,7 +137,7 @@ print(2-3)
 print(2*3)
 print(2/3)
 ```
-<blockquote>QD: Why does <code>print(2/3)</code> return 0? How would you modify your code to return the decimal number? Why?</blockquote>
+<blockquote>QD: Modify the sample code provided in step 26 to create your own arithmetic program.</blockquote>
 
 27. Hint: Try `print(2.0/3.0)` using the floating point integers (numbers with decimal points).
 
@@ -748,7 +748,7 @@ QB: Describe the syntax three commands that we just used in your own words. Defi
 
 QC: Explain how each of these two programs (above) work in your own words.
 
-QD: Why does `print(2/3)` return 0? How would you modify your code to return the decimal number?
+QD: Modify the sample code provided in step 26 to create your own arithmetic program.
 
 QE: Explain `concatenation` in your own words. Why must we convert numbers to strings in the program above? Refer to this example and the previous example.
 

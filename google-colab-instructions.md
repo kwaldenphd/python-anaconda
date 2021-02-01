@@ -16,13 +16,13 @@ By going through this documentation, you will be able to:
 
 # Table of Contents
 
-- [Add Google Colab App To Your Google Drive]()
-- [Create A New Google Colab Notebook]()
-- [Change the Runtime Type]()
-- [Mount Your Google Drive To Your Notebook]()
-- [Add New Cells To Your Notebook]()
-- [Download Your Notebook]()
-- [Last Few Words]()
+- [Add Google Colab App To Your Google Drive](https://github.com/kwaldenphd/python-refresh/blob/main/google-colab-instructions.md#add-google-colab-app-to-your-google-drive)
+- [Create A New Google Colab Notebook](https://github.com/kwaldenphd/python-refresh/blob/main/google-colab-instructions.md#create-a-new-google-colab-notebook)
+- [Change the Runtime Type](https://github.com/kwaldenphd/python-refresh/blob/main/google-colab-instructions.md#change-the-runtime-type)
+- [Mount Your Google Drive To Your Notebook](https://github.com/kwaldenphd/python-refresh/blob/main/google-colab-instructions.md#mount-your-google-drive-to-your-notebook)
+- [Add New Cells To Your Notebook](https://github.com/kwaldenphd/python-refresh/blob/main/google-colab-instructions.md#add-new-cells-to-your-notebook)
+- [Download Your Notebook](https://github.com/kwaldenphd/python-refresh/blob/main/google-colab-instructions.md#download-your-notebook)
+- [Last Few Words](https://github.com/kwaldenphd/python-refresh/blob/main/google-colab-instructions.md#last-few-words)
 
 
 # Add Google Colab App To Your Google Drive

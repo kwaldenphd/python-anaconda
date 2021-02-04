@@ -523,12 +523,14 @@ QQ: Try the following two programs. What did the programs output? Explain how ea
 ```Python
 for tag in book.keys():
   print(tag)
+# Note: this will give a name error if you try to run it because there is no book object here.
 ```
 and 
 
 ```Python
 for data in book.values(): 
     print(data)
+# Note: this will give a name error if you try to run it because there is no book object here.
 ```  
   
 QR: Explain the `if` functions in your own words. What does this program output? Why?

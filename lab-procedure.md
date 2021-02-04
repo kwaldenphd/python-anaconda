@@ -381,7 +381,7 @@ print(sum(patterns))
 ```Python
 #loops through a list of the members of the House Stark.
 
-characters = ['Arya', ' Benjen', 'Bran', 'Catelyn', 'Eddard', 'Rickon', 'Robb', 'Sansa']
+characters = ['Arya', 'Benjen', 'Bran', 'Catelyn', 'Eddard', 'Rickon', 'Robb', 'Sansa']
 
 for character in characters:
   print(character.title() + " Stark")
@@ -409,7 +409,7 @@ Sansa Stark
 
 77. Now let's look at a different loop.
 ```Python
-characters = ['Arya', ' Benjen', 'Bran', 'Catelyn', 'Eddard', 'Rickon', 'Robb', 'Sansa']
+characters = ['Arya', 'Benjen', 'Bran', 'Catelyn', 'Eddard', 'Rickon', 'Robb', 'Sansa']
 print('Members of the House Stark:')
 for character in characters:
   print(character.title() + " Stark")
@@ -421,7 +421,7 @@ print(characters[0].title() + " is my favorite.")
 78. Comments that walk through each line of this program:
 ```Python
 #this line creates the list of character names
-characters = ['Arya', ' Benjen', 'Bran', 'Catelyn', 'Eddard', 'Rickon', 'Robb', 'Sansa']
+characters = ['Arya', 'Benjen', 'Bran', 'Catelyn', 'Eddard', 'Rickon', 'Robb', 'Sansa']
 
 #this first print command prints a header for my list "Members of the House Stark"
 print('Members of the House Stark:')

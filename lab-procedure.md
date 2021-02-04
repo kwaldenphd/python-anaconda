@@ -161,6 +161,8 @@ print("Welcome to " + course_name.title() + " CSE:" + course_number)
 print("Welcome to " + course_name.title() + " CSE:" + str(course_number))
 ```
 
+<blockquote>QE: Explain `concatenation` in your own words. Why must we convert numbers to strings in the program above? Refer to this example and the previous example.</blockquote>
+
 # Task 5: Creating Lists
 
 32. Python allows us to store information in a few different ways. 
@@ -240,7 +242,7 @@ print(my_pets)
 
 51. In this block of code, we started with an empty list `[]`. Then the next three lines with `append` added new items to the list.
 
-<blockquote>QE: Create your own list using the program above as an example. Share your code in your notebook as well as the result. What is the number position for each of the items in your list? How would you return the value of the first item? How would you return the value of the last item?</blockquote>
+<blockquote>QF: Create your own list using the program above as an example. Share your code in your notebook as well as the result. What is the number position for each of the items in your list? How would you return the value of the first item? How would you return the value of the last item?</blockquote>
 
 52. With `append`, items are added to the end of the list. 
 
@@ -301,7 +303,7 @@ length = len(fruit)
 print(length)
 ```
 
-<blockquote>QF: What is an alternative way to write the print command to return the length of the list. *Hint* you’ll combine the last two lines of the example above.</blockquote>
+<blockquote>QG: What is an alternative way to write the print command to return the length of the list. *Hint* you’ll combine the last two lines of the example above.</blockquote>
 
 # Task 6: Lists of Numbers
 
@@ -322,14 +324,14 @@ print(numbers)
 
 66. Python starts with the first number and quits when it reaches the last number of your range. Because it stops at 10, it doesn’t include the 10.
 
-<blockquote>QG: How would you modify this code to output the full range 1-10?</blockquote>
+<blockquote>QH: How would you modify this code to output the full range 1-10?</blockquote>
 
 67. What if we just wanted the odd numbers in this range? We could add an additional value to the `range` function to tell the computer to count by two.
 ```Python
 numbers = list(range(1,11,2))
 print(numbers)
 ```
-<blockquote>QH: How would you rewrite the code to include only the even numbers from 1 to 10?</blockquote>
+<blockquote>QI: How would you rewrite the code to include only the even numbers from 1 to 10?</blockquote>
 
 68. Can you write a program that creates a list that represents all of the different patterns we could represent from 1 bit to 8 bits, like our chart from binary math lab?
 
@@ -355,7 +357,7 @@ for bit in range(1,9):
 print(patterns)
 ```
 
-<blockquote>QI: Either include a snippet of your version of this program in your notebook and explain your code, AND/OR explain how the example version of this program works.</blockquote>
+<blockquote>QJ: Either include a snippet of your version of this program in your notebook and explain your code, AND/OR explain how the example version of this program works.</blockquote>
 
 71. Python also allows us to return the minimum value, maximum value, and sum of the numbers in a list.
 ```Python
@@ -416,7 +418,7 @@ for character in characters:
 print(characters[0].title() + " is my favorite.")
 ```
 
-<blockquote>QJ: What do you expect this code to output? Explain how this program works in your own words.</blockquote>
+<blockquote>QK: What do you expect this code to output? Explain how this program works in your own words.</blockquote>
 
 78. Comments that walk through each line of this program:
 ```Python
@@ -477,7 +479,7 @@ for name in names:
     print(name.title())
 ```
 
-<blockquote>QK: Did the program return the results that you expected? Explain the output in your own words.</blockquote>
+<blockquote>QL: Did the program return the results that you expected? Explain the output in your own words.</blockquote>
 
 82. Python uses a variety of Boolean Operators – these are the conditional tests that return a True or False.
 ```Python
@@ -532,7 +534,7 @@ else:
   print('Would you like a banana?')
 ```
 
-<blockquote>QL: Explain what this program will output and why.</blockquote>
+<blockquote>QM: Explain what this program will output and why.</blockquote>
 
 # Task 9: Gathering Input
 
@@ -543,7 +545,7 @@ else:
 name = input("Please enter your name: ")
 print("Hello, " + name)
 ```
-<blockquote>QM: What did the program output? Explain this program in your own words.</blockquote>
+<blockquote>QN: What did the program output? Explain this program in your own words.</blockquote>
 
 86. Here we set the variable name to the input that we receive from the user. 
 
@@ -597,7 +599,7 @@ while int(number) != secret_number:
 print("You guessed it!")
 ```
 
-<blockquote>QN: Modify the code to change the range to have the user guess between 1 and 100. Then, change the conditional statement to return a “really close” message if they are within a 3 digit range of your number. Include the code in your notes and explain how the program works in your own words.</blockquote>
+<blockquote>QO: Modify the code to change the range to have the user guess between 1 and 100. Then, change the conditional statement to return a “really close” message if they are within a 3 digit range of your number. Include the code in your notes and explain how the program works in your own words.</blockquote>
 
 # Task 10: Describing Data With Dictionaries
 
@@ -649,7 +651,7 @@ book={'title': 'CSS: The Definitive Guide', 'author': 'Eric Meyer', 'date': '200
 
 99. The information is added in a series of pairs called key-value pairs. Each key is the equivalent of the XML tag and each value equal to the value we associated with the tag.
 
-<blockquote>QO: Create a dictionary for one of the items in your collection using the template outlined in this tutorial. Write a print command and explain the output of your program in your own words.</blockquote>
+<blockquote>QP: Create a dictionary for one of the items in your collection using the template outlined in this tutorial. Write a print command and explain the output of your program in your own words.</blockquote>
 
 100. Just like with the list, we can also create a loop to return each of the values in my new dictionary.
 ```Python
@@ -678,7 +680,7 @@ for tag, data in book.items():
   print("value: " + data)
 ```
 
-<blockquote>QP: Try the following two programs. What did the programs output? Explain how each program works in your own words.</blockquote>
+<blockquote>QQ: Try the following two programs. What did the programs output? Explain how each program works in your own words.</blockquote>
 ```Python
 for tag in book.keys():
   print(tag)
@@ -712,7 +714,7 @@ book['date'] = 2002
 print(book)
 ```
   
-<blockquote>QQ: What do you expect this program to output? Why?</blockquote>
+<blockquote>QR: What do you expect this program to output? Why?</blockquote>
   
 107. We can also delete key-value pairs using the `del` function.
 ```Python

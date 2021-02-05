@@ -172,6 +172,8 @@ sys.path.append('/content/drive/My Drive/EoC_002')
 
 # Last Few Words
 
-35. Hope you have fun working with Google Colab notebook as much as I do and have had in the recent past. Welcome to the course and happy coding! 
+35. If you face any problem with Google Colab, please feel free to pose such questions on Slack. We would be happy to answer all your questions. 
+
+36. And finally, hope you have fun working with Google Colab notebook as much as we do and have had in the recent past. Welcome to the course and happy coding! 
 
 

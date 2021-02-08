@@ -26,10 +26,9 @@ Peer review and editing was provided by Spring 2021 graduate teaching assistants
 
 Documentation for the Jupyter Notebook workflow was developed by Spring 2021 graduate teaching assistant [Aidan Draper](https://github.com/adraper2).
 
-Information and exercises in this lab are adapted from the following text:
-
-Al Sweigart's [*Automate the Boring Stuff With Python*](https://nostarch.com/automatestuff2) (No Starch Press, 2020).
-- Chapter 11, "Debugging" (249-266)
+Information and exercises in this lab are adapted from the following texts:
+- Al Sweigart's [*Automate the Boring Stuff With Python*](https://nostarch.com/automatestuff2) (No Starch Press, 2020).
+  * Chapter 11, "Debugging" (249-266)
 
 The author consulted the following texts when writing this tutorial:
 - Allen Downey, [*Think Python: How to Think Like a Computer Scientist*](https://www.oreilly.com/library/view/think-python-2nd/9781491939406/) (O'Reilly, 2015).

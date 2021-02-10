@@ -86,7 +86,7 @@ print(name.title())
 
 19. Try adding two additional print functions calling the name variable with each of these methods.  
 
-<blockquote>QB: Describe the syntax three commands that we just used in your own words. Define the function and method for each example.</blockquote>
+<blockquote>QB: Describe the syntax of the three commands that we just used in your own words. Define the function and method for each example.</blockquote>
 
 20. Let’s modify our code a bit and create two new variables `first_name` for your first name and `last_name` for your last name. We can then combine these two string variables (called concatenation) in a third variable called `full_name`.
 ```Python

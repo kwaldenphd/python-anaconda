@@ -493,7 +493,7 @@ Q7: Compare your experience working in both IDEs. What seems appealing about eac
 
 QA: In your own words, explain the difference between the `print(hello)` command we just used and `print(“hello”)`.
 
-QB: Describe the syntax three commands that we just used in your own words. Define the function and method for each example.
+QB: Describe the syntax of the three commands that we just used in your own words. Define the function and method for each example.
 
 QC: Explain how each of these two programs (above) work in your own words.
 

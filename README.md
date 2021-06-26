@@ -1,4 +1,4 @@
-# The Python Ecosystem
+# Python in Anaconda
 
 <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license"><img style="border-width: 0;" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" alt="Creative Commons License" /></a>
 This tutorial is licensed under a <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
@@ -14,11 +14,6 @@ By the end of this lab, students will be able to:
 - Understand how to use step-wise debugging in the Spyder IDE
 - Understand the core components of the Jupyter Notebooks environment
 - Compare and contrast the Spyder and Jupyter environments
-- Refresh their knowledge of core Python syntax
-
-[Click here](https://raw.githubusercontent.com/kwaldenphd/python-refresh/main/python-refresh.ipynb) and select the "Save As" option to download this lab as as Jupyter Notebook.
-
-[Link to lab overview video](https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8c1dfd5d-53aa-42ec-abee-acd70164b935) (Panopto, ND users only).
 
 ## Acknowledgements
 
@@ -49,14 +44,11 @@ The author consulted the following texts when writing this tutorial:
   * [But why can't I debug using `print()`](#but-why-cant-i-debug-using-print)
 - [Python in Jupyter notebooks](#python-in-jupyter-notebooks)
   * [Installing packages in Jupyter notebooks](#installing-packages-in-jupyter-notebooks)
-- [Project prompts](#project-prompts)
 - [Lab notebook questions](#lab-notebook-questions)
-  * [Notebook questions from this section of the lab](#notebook-questions-from-this-section-of-the-lab)
-  * [Notebook questions from the Python Refresh Lab Procedure](#notebook-questions-from-the-python-refresh-lab-procedure)
 
-# Different types of Python environments
+# Different Types of Python Environments
 
-1. In the Fall 2020 iteration of Elements I, we used the browser-based IDE [Replit](https://repl.it/).
+1.Up to this point, we have used the browser-based IDE [Replit](https://repl.it/).
 
 2. What is an IDE? "An integrated development environment (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of at least a source code editor, build automation tools and a debugger" ([Wikipedia](https://en.wikipedia.org/wiki/Integrated_development_environment)).
 
@@ -66,9 +58,9 @@ The author consulted the following texts when writing this tutorial:
 
 5. Some common IDEs include Eclipse, Geany, Brackets, Atom, PyCharm, Spyder, RStudio, etc. For more in IDEs, visit Wikipedia's ["Comparison of integrated development environments"](https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments) page.
 
-6. Replit (generally) worked for (most of) our needs in Elements I. But it ran into problems with more complex programs or programs involving external files/datasets/etc. 
+6. Replit (generally) worked for (most of) our needs. But it ran into problems with more complex programs or programs involving external files/datasets/etc. 
 
-7. So in this semester, we're going to install Python on your local computer, using a distribution called Anaconda.
+7. We're going to install Python on your local computer, using a distribution called Anaconda.
 
 8. What is Anaconda? "Anaconda is a open-source distribution of the Python and R programming languages for scientific computing (data science, machine learning applications, large-scale data processing, predictive analytics, etc.), that aims to simplify package management and deployment. The distribution includes data-science packages suitable for Windows, Linux, and macOS. It is developed and maintained by Anaconda, Inc., which was founded by Peter Wang and Travis Oliphant in 2012" ([Wikipedia](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution))).
 
@@ -82,7 +74,7 @@ The author consulted the following texts when writing this tutorial:
 - RStudio
 - Visual Code Studio
 
-10. This semester, we'll be using the Jupyter Notebook and Spyder components of Anaconda.
+10. We'll be using the Jupyter Notebook and Spyder components of Anaconda.
 
 # Installing Anaconda
 
@@ -166,9 +158,9 @@ The author consulted the following texts when writing this tutorial:
 
 <blockquote>Q2: How is Spyder different than previous IDEs? What do you see as strengths/advantages? What do you see as possible challenges?</blockquote>
 
-<blockquote>OPTIONAL: Take one of your Python files or programs from Elements I and load it into Spyder. Explore how the program runs in a different IDE. In particular, explore Spyder's options to run portions or a selection of the larger program. How does this change the way you interact with the program?</blockquote>
+<blockquote>OPTIONAL: Take a <code>.py</code> lab notebook file and load it into Spyder. Explore how the program runs in a different IDE. In particular, explore Spyder's options to run portions or a selection of the larger program. How does this change the way you interact with the program?</blockquote>
 
-## Installing packages in Spyder
+## Installing Packages in Spyder
 
 35. From the Anaconda navigator, you can select the option to launch a terminal.
 
@@ -214,7 +206,7 @@ The author consulted the following texts when writing this tutorial:
 
 52. The debugging strategies discussed here will focus on semantic errors but are useful for all types of errors.
 
-## Stepwise debugging in Spyder
+## Stepwise Debugging in Spyder
 
 53. Spyder will catch many syntax and runtime errors. 
 
@@ -257,7 +249,7 @@ print('The sum is ' + first + second + third)
 
 <blockquote>Q3: What type of error does this program return (syntax, runtime, semantic) and why? How would we go about modifying the program to address this error?</blockquote>
 
-## Other approaches to debugging
+## Other Approaches to Debugging
 
 62. If you've never put a `print()` statement in your code to output a variable's value while the program is running, you have used a form of `logging` to debug your code.
 
@@ -319,7 +311,7 @@ logging.debug('End of program')
 
 <blockquote>Q6: What are your thoughts on this approach to identifying what's happening in your program? What seems appealing? What seems challenging? When or how could this approach be useful?</blockquote>
 
-# Python in Jupyter notebooks
+# Python in Jupyter Notebooks
 
 75. What is Jupyter?
 
@@ -428,7 +420,7 @@ logging.debug('End of program')
 
 110. They also work well for documenting process, or in situations when you might need to alternate between code and other kinds of text (like say in a lab notebook).
 
-### Installing packages in Jupyter notebooks
+### Installing Packages in Jupyter Notebooks
 
 111. You might see internet documentation that suggests you apply the install terminal syntax directly in a code cell.
 ```Python
@@ -467,15 +459,9 @@ import sys
 116. For more on installing Python packages in the Jupyter notebook environment:
 - Jake VanderPlas, ["Installing Python Packages from a Jupyter Notebook"](https://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/) *Pythonic Perambulations personal blog* (5 December 2017)
 
-# Project Prompts
+<blockquote>Q7: Compare your experience working in different Python IDEs. What seems appealing about each? What seems challenging? Based on this experience, what is your preference, or are there situations in which you'd prefer one over the other?</blockquote>
 
-Run [Python refresh lab procedure](https://github.com/kwaldenphd/python-refresh/blob/main/lab-procedure.md) in both environments. Include `.py` file and Jupyter notebook `.ipynb` file that document your experience working through the prompts. 
-
-<blockquote>Q7: Compare your experience working in both IDEs. What seems appealing about each? What seems challenging? Based on this experience, what is your preference, or are there situations in which you'd prefer one over the other?</blockquote>
-
-# Lab notebook questions
-
-## Notebook questions from this section of the lab
+# Lab Notebook Questions
 
 Q1: Describe your experience installing Anaconda using the available/provided documentation. What did you expect to happen? What challenges did you face? How did you solve them?
 
@@ -489,55 +475,4 @@ Q5: Is this program doing what we expect? Where would you go next with debugging
 
 Q6: What are your thoughts on this approach to identifying what's happening in your program? What seems appealing? What seems challenging? When or how could this approach be useful?
 
-Q7: Compare your experience working in both IDEs. What seems appealing about each? What seems challenging? Based on this experience, what is your preference, or are there situations in which you'd prefer one over the other?
-
-## Notebook questions from the [Python Refresh Lab Procedure](https://github.com/kwaldenphd/python-refresh/blob/main/lab-procedure.md)
-
-QA: In your own words, explain the difference between the `print(hello)` command we just used and `print(“hello”)`.
-
-QB: Describe the syntax of the three commands that we just used in your own words. Define the function and method for each example.
-
-QC: Explain how each of these two programs (above) work in your own words.
-
-QD: Modify the sample code provided in step 26 to create your own arithmetic program.
-
-QE: Explain `concatenation` in your own words. Why must we convert numbers to strings in the program above? Refer to this example and the previous example.
-
-QF: Create your own list using the program above as an example. Share your code in your notebook as well as the result. What is the number position for each of the items in your list? How would you return the value of the first item? How would you return the value of the last item?
-
-QG: What is an alternative way to write the `print` command to return the length of the list. *Hint* you’ll combine the last two lines of the example above.
-
-QH: How would you modify this code to output the full range 1-10?
-
-QI: How would you rewrite the code to include only the even numbers from 1 to 10?
-
-QJ: Either include a snippet of your version of this program in your notebook and explain your code, AND/OR explain how the example version of this program works.
-
-QK: What do you expect this code to output? Explain how this program works in your own words.
-
-QL: Did the program return the results that you expected? Explain the output in your own words.
-
-QM: Explain what this program will output and why.
-
-QN: What did the program output? Explain this program in your own words.
-
-QO: Modify the code to change the range to have the user guess between 1 and 100. Then, change the conditional statement to return a “really close” message if they are within a 3 digit range of your number. Include the code in your notes and explain how the program works in your own words.
-
-QP: Create a dictionary for one of the items in your collection using the tags and information from your XML file. Write a `print` command and explain the output of your program in your own words.	
-
-QQ: Try the following two programs. What did the programs output? Explain how each program works in your own words.
-  
-```Python
-for tag in book.keys():
-  print(tag)
-# Note: this will give a name error if you try to run it because there is no book object here.
-```
-and 
-
-```Python
-for data in book.values(): 
-    print(data)
-# Note: this will give a name error if you try to run it because there is no book object here.
-```  
-  
-QR: Explain the `if` functions in your own words. What does this program output? Why?
+Q7: Compare your experience working in different Python IDEs. What seems appealing about each? What seems challenging? Based on this experience, what is your preference, or are there situations in which you'd prefer one over the other?
